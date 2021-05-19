@@ -1,17 +1,45 @@
 import React from 'react'
 import './App.css';
 import LeftBar from './Left-bar.js';
-import Title from './header.js'
+import Title from './home.js'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useRouteMatch,
+  useParams
+} from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <LeftBar />
-      <div>
-        <Title /> 
+
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      car: 'test'
+    };
+  }
+  render() { 
+    return (
+      <div className="container-app">
+        <LeftBar/>
+        <Router>
+        <div className="App">
+          <Switch>
+            <Route path ='/home'>
+              <Title /> 
+            </Route>
+            <Route path="/wedding">
+              <div className="container-photography">
+              <p>TESTTTTTTTTTTTTTTTTTTTTTTTTT</p>
+              </div>
+            </Route>   
+          </Switch>
+        </div>
+        </Router>
       </div>
-    </div>
-  );
+    );
+  }
 }
-
 export default App;
