@@ -4,6 +4,7 @@ import Topbar from './Heading.js';
 import WeddingPage from './Wedding.js';
 import Centerpiece from './home.js';
 import FamilyPortraitPage from './Familyportrait.js';
+import PianoCamera from "./img-phot/camera-square.jpeg";
 import {
   BrowserRouter as Router,
   Switch,
@@ -17,15 +18,39 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      landing: true
+      intro: true,
+      activePage: false,
+      cat: 'kittens',
+      activeLink: 'dormant'
     };
   }
+
+  makeActive(params) {
+      this.setState({
+        activeLink: params
+      })
+  }
+
+  // function mActive(params) {
+  //   const {  }
+  // }
+
   render() { 
     return (
 
-      this.state.landing ?  <button onClick={ ()=> this.setState({landing: false})}>Click me!</button>
+      // Uess a Ternary webpage to landing page on first render 
+      this.state.intro ?  
+        <div className="intro-page">
+          <div className="intro-page-img" >
+            {/* <img src={PianoCamera} ></img> */}
+          </div>
+          <button onClick={ ()=> this.setState({intro: false})}>Click me!</button>
+        </div>
+
       : <div className="container-app">
           
+  
+
         <Router>
             <div className="container-heading">
                 <Link className="logo" to="/home">CREATIVE CROSSROADS</Link>
@@ -38,7 +63,7 @@ class App extends React.Component {
 
                         <Link className="links" to="/headshots">HEADSHOTS</Link>
 
-                        <Link className="links" to="/familyportrait">FAMILY PORTRAITS</Link>
+                        <Link id={this.state.active} className="links" to="/familyportrait">FAMILY PORTRAITS</Link>
 
                         <Link className="links" to="/music">MUSICAL PERFORMANCES</Link>
                     </div>
@@ -58,8 +83,9 @@ class App extends React.Component {
                     <Route exact path="/headshots">
 
                     </Route>
-                    <Route exact path="/familyportrait">
-                        <FamilyPortraitPage />
+                    <Route exact path="/:familyportrait" >
+                        <FamilyPortraitPage makeActive={this.makeActive.bind(this)}/>
+                        
                     </Route>
                     <Route exact path="/music">
 

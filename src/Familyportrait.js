@@ -4,8 +4,9 @@ import img2 from "./img-family/img2.jpeg";
 import img3 from "./img-family/img3.jpeg";
 import img4 from "./img-family/img4.jpeg";
 import img5 from "./img-family/img5.jpeg";
-import img6 from "./img-family/img6.jpeg";
+// import img6 from "./img-family/img6.jpeg";
 import img7 from "./img-family/img7.jpeg";
+import img8 from "./img-family/img8.jpeg";
 import {
     BrowserRouter as Router,
     Switch,
@@ -15,26 +16,30 @@ import {
     useParams
   } from "react-router-dom";
 
-export default function FamilyPortraitPage() {
+export default function FamilyPortraitPage(props) {
     return (
         <div className="family-page">
-            <FamilyHeader />
+            {/* <Test cat={props.cat}/> */}
+
             <Slideshow />
             <Gallery/>
         </div>
     )
 }
 
-function FamilyHeader() {
-    return(
-        <div className="family-header">
-            <h1>Family Portraits</h1>
-        </div>
-    )
-}
+
+// function Test(props) {
+//     return( 
+//     alert(`${props.cat} are going to ruin us all!`)
+//     )
+// }
+
+// function Active(props) {
+//     props.makeActive('active')
+// }
 
 
-const images = [img1, img2, img3, img4, img5, img7];
+const images = [img8, img2, img1, img3, img4, img5, img7];
 const delay = 5000;
 
 function Slideshow() {
