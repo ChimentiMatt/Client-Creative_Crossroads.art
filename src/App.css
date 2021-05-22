@@ -238,6 +238,7 @@
 
 .link-tag-view-gallery{
   float: right;
+
 }
 
 
@@ -256,3 +257,44 @@
   object-fit:contain;
 } */
   /* object-fit:cover; */
+
+
+
+
+
+
+/* Photography Page - Gallery  */
+
+.gallery {
+  /* display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(202, 202, 202);
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+  padding: 5px; */
+  display: grid;
+  grid-template-columns: repeat(4, 600px);
+  grid-template-rows: repeat(6, 600px);
+  grid-gap: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+.gallery img:hover{
+  -webkit-filter: brightness(70%);
+
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* .gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 4;
+} */

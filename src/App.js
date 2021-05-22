@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css';
 import Topbar from './Heading.js';
+import PhotogPage from './Photog';
 import WeddingPage from './Wedding.js';
 import Centerpiece from './home.js';
 import FamilyPortraitPage from './Familyportrait.js';
@@ -75,7 +76,7 @@ class App extends React.Component {
                         <Centerpiece />
                     </Route>
                     <Route exact path="/photography">
-
+                        <PhotogPage />
                     </Route>
                     <Route exact path="/wedding">
                         <WeddingPage />
