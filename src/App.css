@@ -27,19 +27,72 @@
   background-repeat: no-repeat;
   z-index: -1;
 }
-.intro-h1{
+
+.container-intro-texts{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   position: absolute;
   float: right;
-  left: 62.5%;
-  top: 40%;
-  z-index: 1;
+  left: 55%;
+  top: 35%;
+  display: flex;
+  /* border: 1px solid black; */
+  height: 200px;
+  width: 600px;
+
 }
 
-.intro-page-btn1{ 
+.intro-h1{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /* left: 62.5%;
+  top: 40%; */
+  z-index: 1;
+  margin-bottom: 20px;
+  /* border: 1px solid black; */
+}
+
+
+.watermark{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.container-rows{
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid blue; */
+  margin-left: 110px;
+  margin-right: 110px;
+
+}
+
+.row1-buttons{
+  display: flex;
+  margin-bottom: 10px;
+  /* border: 1px solid blue; */
+  justify-content: space-between;
+
+  /* display: flex;
+  justify-content: space-between;
   position: absolute;
   float: right;
   left: 63%;
   top: 60%;
+  z-index: 3;
+  border: none;
+  font-size: 20px;
+  height: 50px;
+  width: 360px; */
+
+}
+
+.intro-page-btn1{ 
   z-index: 3;
   border: none;
   font-size: 20px;
@@ -48,32 +101,29 @@
 }
 
 .intro-page-btn2{
-  position: absolute;
-  float: right;
-  left: 74.5%;
-  top: 60%;
   z-index: 3;
   border: none;
   font-size: 20px;
   background-color: white;
+
 
 }
 .intro-page-btn3{
-  position: absolute;
-  float: right;
-  left: 84%;
-  top: 60%;
   z-index: 3;
   border: none;
   font-size: 20px;
   background-color: white;
+}
+
+.row2-buttons{
+  display: flex;
+  /* border: 1px solid red; */
+  justify-content: space-between;
 
 }
+
+
 .intro-page-btn4{
-  position: absolute;
-  float: right;
-  left: 63%;
-  top: 65%;
   z-index: 3;
   border: none;
   font-size: 20px;
@@ -81,10 +131,6 @@
 
 }
 .intro-page-btn5{
-  position: absolute;
-  float: right;
-  left: 76.6%;
-  top: 65%;
   z-index: 3;
   border: none;
   font-size: 20px;
@@ -120,13 +166,7 @@
 .intro-page-btn5                                        :hover{
   opacity: .7;
 } 
-.watermark{
-  position: absolute;
-  float: right;
-  left: 63.3%;
-  top: 40%;
-  z-index: 1;
-}
+
 
 
 
@@ -175,7 +215,15 @@
   text-decoration: none;
   font-size: 50px;
   margin-top: 25px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
+}
+
+
+.header-watermark{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .links:hover{ 
@@ -367,8 +415,11 @@
 
 /* Photography Page - Gallery  */
 
-
+.container-photos{
+  margin: 20px;
+}
 
 .photo:hover {
   -webkit-filter: brightness(70%);
+
 }
