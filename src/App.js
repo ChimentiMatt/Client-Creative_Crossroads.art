@@ -1,11 +1,16 @@
 import React from 'react'
 import './App.css';
+
+import { render } from "react-dom";
+
+import BasicRows from "./photos.js"
 import Topbar from './Heading.js';
 import PhotogPage from './Photog';
 import WeddingPage from './Wedding.js';
 import Centerpiece from './home.js';
 import FamilyPortraitPage from './Familyportrait.js';
 import PianoCamera from "./img-phot/camera-square.jpeg";
+import Logo from "./img-phot/Watermark.png";
 import {
   BrowserRouter as Router,
   Switch,
@@ -15,6 +20,8 @@ import {
   useParams
 } from "react-router-dom";
 
+
+    
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -37,15 +44,25 @@ class App extends React.Component {
   // }
 
   render() { 
+
     return (
 
       // Uess a Ternary webpage to landing page on first render 
       this.state.intro ?  
         <div className="intro-page">
           <div className="intro-page-img" >
-            {/* <img src={PianoCamera} ></img> */}
+
           </div>
-          <button onClick={ ()=> this.setState({intro: false})}>Click me!</button>
+          <button className="intro-page-btn1" onClick={ ()=> this.setState({intro: false})}>Photography</button>
+          <button className="intro-page-btn2" onClick={ ()=> this.setState({intro: false})}>Weddings</button>
+          <button className="intro-page-btn3" onClick={ ()=> this.setState({intro: false})}>Headshots</button>
+          <button className="intro-page-btn4" onClick={ ()=> this.setState({intro: false})}>Family Portraits</button>
+          <button className="intro-page-btn5" onClick={ ()=> this.setState({intro: false})}>Musical Performances</button>
+
+          {/* Hidden button  */}
+          <button className="intro-page-btn-catch-all" onClick={ ()=> this.setState({intro: false})}>.</button>
+          <h1 className="intro-h1">CREATIVE CROSSROADS</h1>
+          <img className="watermark" src={Logo} ></img>
         </div>
 
       : <div className="container-app">
@@ -76,7 +93,12 @@ class App extends React.Component {
                         <Centerpiece />
                     </Route>
                     <Route exact path="/photography">
-                        <PhotogPage />
+                        {/* <PhotogPage /> */}
+
+
+                          <BasicRows /> 
+
+
                     </Route>
                     <Route exact path="/wedding">
                         <WeddingPage />
@@ -102,6 +124,8 @@ class App extends React.Component {
     );
   }
 }
+
+
 
 // export default function LandingPage() {
 //   return (

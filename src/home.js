@@ -12,7 +12,7 @@ import {
 export default function Centerpiece() {
   return (
     <div className="container-home">
-
+<div id="app"></div>
       <div className="container-showpiece">
         <img src={centerpieceImg} alt="test" />
 
