@@ -163,7 +163,7 @@
 .intro-page-btn4:hover{
   opacity: .7;
 } 
-.intro-page-btn5                                        :hover{
+.intro-page-btn5:hover{
   opacity: .7;
 } 
 
@@ -318,15 +318,15 @@
 /* Family Page Slideshow */
 
 .container-slide {
-
-  text-align: center;
+  width: 1000px;
   margin: 0 auto;
   overflow: hidden;
   /* width: 1560px; */
-  width: 1000px;
-  background-color: rgb(248, 248, 248);
+  /* text-align: center; */
+
+  /* background-color: rgb(248, 248, 248); */
   /* border:  1px solid blue; */
-  padding-bottom: 25px;
+  /* padding-bottom: 25px; */
   /* box-shadow: 0 3px 25px #000; */
 }
 
@@ -344,10 +344,14 @@
 
 }
 
+
+
+
 /* Family Page Slideshow - Slide Buttons */
 .slideshowDots {
   text-align: center;
 }
+
 .slideshowDot {
   display: inline-block;
   height: 5px;
@@ -363,55 +367,84 @@
   background-color: #040007;
 }
 
-
-/* Family Page Gallery */
-
-/* .header-gal{
-  margin-top: 200px;
-  text-align: center;
-} */
-
-/* .container-cards-fam{
-  display: flex;
-  flex-direction: row;
-
-  height: 100vh;
-  width: 20px;
- 
-} */
-  /* width: 1560; */
-  /* margin-left: 100px;
-  margin-right: 100px; */
-
-
-
-
 .link-tag-view-gallery{
   float: right;
-
 }
 
 
 
-/* .cards-img-fam  {
-  margin: 10px;
+
+
+/* Family Page Form Section */
+
+.line{
+  height: 50px;
+  border-top: 1px solid rgba(0, 0, 0, .3);
+  margin-top: 50px;
+}
+
+.container-family-form{
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between  ;
+  margin-top: 20px;
+  text-align: center;
+  height: 500px;
+  /* background-color: rgb(239,220,205); */
+  background-color: rgba(0, 0, 0, .1);;
+  /* background-color: rgb(231, 230, 230); */
 }
 
-.cards-img-fam img  {
-  width: 400px;
-  margin-right: 10px;
-  object-fit:contain;
-} */
-  /* object-fit:cover; */
+.right-img{
+  object-fit: contain;
+  width: 500px;
 
+}
 
+.container-family-form h2{
+  /* color: #272727; */
+  color: black;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  font-family: 'Oranienbaum', serif;
+  font-size: 45px;
+}
 
+.inner-container-family-form{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+}
 
+.form-field{
+  text-align: center;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  border: 1px solid rgb(202, 202, 202);
+  border-radius: 3px;
+  font-size: 20px;
+  width:90%;
+}
+
+.form-btn{
+  padding: 10px;
+  width:90%;
+  font-size: 20px;
+  background-color: rgb(41, 41, 41);
+  color:white;
+  border: none;  
+  margin-top: 10px;
+  border-radius: 3px;
+}
+
+.form-btn:hover{
+  /* background-color: rgb(255, 255, 255);
+  color:rgb(73, 110, 153); */
+  opacity: .8;
+}
 
 /* Photography Page - Gallery  */
 
@@ -421,5 +454,22 @@
 
 .photo:hover {
   -webkit-filter: brightness(70%);
+}
 
+
+
+/* Footer */
+.footer {
+  height: 50px;
+  background: rgba(0, 0, 0);
+  color: rgb(100, 100, 100);
+}
+
+.footer-text{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 15px;
+  align-items: center;
 }

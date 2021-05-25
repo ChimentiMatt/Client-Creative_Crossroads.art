@@ -9,6 +9,9 @@ import PhotogPage from './Photog';
 import WeddingPage from './Wedding.js';
 import Centerpiece from './home.js';
 import FamilyPortraitPage from './Familyportrait.js';
+import BottomBar from './BottomBar.js'
+import ContactPage from './contact.js'
+
 import PianoCamera from "./img-phot/camera-square.jpeg";
 import Logo from "./img-phot/Watermark.png";
 import LogoHeader from "./img-phot/Watermark-for-header.png";
@@ -92,6 +95,8 @@ class App extends React.Component {
                 <Link id={this.state.active} className="links" to="/familyportrait">FAMILY PORTRAITS</Link>
 
                 <Link className="links" to="/music">MUSICAL PERFORMANCES</Link>
+
+                <Link className="links" to="/contact">CONTACT</Link>
               </div>
 
             </div>
@@ -100,27 +105,34 @@ class App extends React.Component {
                 <Route exact path="/home">
                   <Centerpiece />
                 </Route>
+
                 <Route exact path="/photography">
-                  {/* <PhotogPage /> */}
 
                   <div className="container-photos"> 
                     <BasicRows />
                   </div>
-
                 </Route>
+
                 <Route exact path="/wedding">
                   <WeddingPage />
                 </Route>
+
                 <Route exact path="/headshots">
-
                 </Route>
-                <Route exact path="/:familyportrait" >
+
+                <Route exact path="/familyportrait" >
                   <FamilyPortraitPage makeActive={this.makeActive.bind(this)} />
-
                 </Route>
+                
                 <Route exact path="/music">
+                  <ContactPage />
+                  </Route>
 
+                <Route exact path="/contact">
+                  <ContactPage />
                 </Route>
+
+               
                 <Route exact path="">
                   <p>testing</p>
                 </Route>
@@ -128,6 +140,7 @@ class App extends React.Component {
             </div>
 
           </Router>
+          <BottomBar />
         </div>
     );
   }

@@ -7,6 +7,7 @@ import img5 from "./img-family/img5.jpeg";
 // import img6 from "./img-family/img6.jpeg";
 import img7 from "./img-family/img7.jpeg";
 import img8 from "./img-family/img8.jpeg";
+import Girl from "./img-family/squared-girl.jpg";
 import {
     BrowserRouter as Router,
     Switch,
@@ -22,7 +23,8 @@ export default function FamilyPortraitPage(props) {
             {/* <Test cat={props.cat}/> */}
 
             <Slideshow />
-            <Gallery/>
+            {/* <Gallery/> */}
+
         </div>
     )
 }
@@ -46,6 +48,9 @@ function Slideshow() {
     const [index, setIndex] = React.useState(0);
     const timeoutRef = React.useRef(null);
     
+
+
+
     function resetTimeout() {
         if (timeoutRef.current) {
           clearTimeout(timeoutRef.current);
@@ -67,6 +72,8 @@ function Slideshow() {
         };
       }, [index]);
 
+    
+
     return (
         <div className="container-slide">
         <div 
@@ -79,11 +86,13 @@ function Slideshow() {
                 key={index} 
                 style={{ img }}
                 />
+                
             ))}
         </div>
 
         <div className="slideshowDots">
             {images.map((_, idx) => (
+              
             <div
                 key={idx}
                 className={`slideshowDot${index === idx ? " active" : ""}`}
@@ -92,10 +101,38 @@ function Slideshow() {
                   }}
                 ></div>
             ))}
+
+        <div className="left-arrow">
+
         </div>
+
+        
+        </div>
+        <div className="line"></div>
+        <div className="container-family-form">
+          <div className="inner-container-family-form">
+            <h2>Schedule Your Family</h2>
+            <input class="form-field" placeholder="Name"></input>
+            <input class="form-field" placeholder="Email"></input>
+            <input class="form-field" placeholder="Phone Number"></input>
+            <input class="form-field" placeholder="Preferred Date of Shoot"></input>
+            <textarea class="form-field" placeholder="Anything you want me to know about the photoshoot" type="text"></textarea>
+            <button class="form-btn" >Submit Form</button>
+          </div>
+         <img className="right-img" src={Girl} alt="test" />
+        </div>
+
+
+          <br></br>
+          <br></br>
+          <br></br>
+
+
         </div>  
     );
 }
+
+
 
 
 
@@ -122,3 +159,4 @@ function Gallery() {
         </div>
     )
 }
+
