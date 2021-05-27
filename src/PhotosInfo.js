@@ -1,16 +1,15 @@
 import React from 'react';
-import Glory from "./img-phot/glory.jpeg"
 
-
-export default function ContactPage() {
+export default function PhotoInfo() {
     return(
         <div >
-            <div className="container-contact-img">
-                <img src={Glory}></img>
-            </div>
+            {/* div that gives a top margin is much simplier than editing plug in */}
+            <div className="margin-top"></div>
+            <div className="line"></div>
+
             <div className="container-contact-body">
-                <h2>Contact</h2>
-                <p>Want to book for Photos or Music?</p>
+                <h2>Purchase A Print</h2>
+                <p>Want to buy a print?</p>
                 <p>Have any specific requests or questions?</p>
                 <p>Email: sfchim@msn.com</p>
             </div>
@@ -37,9 +36,12 @@ export default function ContactPage() {
 
             <textarea class="form-field" placeholder="Anything you want me to know" type="text"></textarea>
             <button class="form-btn" >Submit Form</button>
+  
           </div>
          {/* <img className="right-img" src={Glory} alt="test" /> */}
         </div>
+        <div className="line"></div>
         </div>
+        
     )
 }

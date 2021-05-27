@@ -149,6 +149,7 @@ const photos = [
         width: 2465,
         height: 1451
     },
+
 ];
 const BasicRows = () => <Gallery id='1' photos={photos} />;
 export default BasicRows

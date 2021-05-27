@@ -3,11 +3,10 @@ import './App.css';
 
 import { render } from "react-dom";
 
-import BasicRows from "./photos.js"
-import Topbar from './Heading.js';
-import PhotogPage from './Photog';
+import BasicRows from "./photos.js";
+import PhotoInfo from "./PhotosInfo.js";
 import WeddingPage from './Wedding.js';
-import Centerpiece from './home.js';
+import AboutPage from './about';
 import FamilyPortraitPage from './Familyportrait.js';
 import BottomBar from './BottomBar.js'
 import ContactPage from './contact.js'
@@ -81,35 +80,43 @@ class App extends React.Component {
 
           <Router>
             <div className="container-heading">
-              <Link className="logo" to="/home">CREATIVE CROSSROADS</Link>
-              <div className="container-header-watermark">
+              <p className="header-font">CREATIVE CROSSROADS</p>
+              <div>
                 <img className="header-watermark" src={LogoHeader} ></img>
+
+                <div className="about-contact">
+                <Link id="about" className="links" to="/about">About</Link>
+
+                <Link id="contact" className="links" to="/contact">Contact</Link>  
+                </div>
               </div>
               <div className='container-a-tag'>
-                <Link className="links" to="/photography">PHOTOGRAPHY</Link>
+                <Link className="links" to="/photography">Photography</Link>
 
-                <Link className="links" to="/wedding">WEDDING PHOTOGRAPHY</Link>
+                <Link className="links" to="/wedding">Wedding Photography</Link>
 
-                <Link className="links" to="/headshots">HEADSHOTS</Link>
+                <Link className="links" to="/headshots">Headshots</Link>
 
-                <Link id={this.state.active} className="links" to="/familyportrait">FAMILY PORTRAITS</Link>
+                <Link id={this.state.active} className="links" to="/familyportrait">Family Portraits</Link>
 
-                <Link className="links" to="/music">MUSICAL PERFORMANCES</Link>
+                <Link className="links" to="/music">Musical Performances</Link>
+          
 
-                <Link className="links" to="/contact">CONTACT</Link>
+
               </div>
 
             </div>
             <div className="content-body">
               <Switch>
                 <Route exact path="/home">
-                  <Centerpiece />
+                  {/* <Centerpiece /> */}
                 </Route>
 
                 <Route exact path="/photography">
 
                   <div className="container-photos"> 
                     <BasicRows />
+                    <PhotoInfo />
                   </div>
                 </Route>
 
@@ -134,7 +141,7 @@ class App extends React.Component {
 
                
                 <Route exact path="">
-                  <p>testing</p>
+                  <AboutPage />
                 </Route>
               </Switch>
             </div>
