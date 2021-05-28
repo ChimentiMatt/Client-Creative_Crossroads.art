@@ -57,6 +57,13 @@
   /* border: 1px solid black; */
 }
 
+.intro-links{
+  text-decoration: none;
+  color: black;
+}
+.intro-links:hover{
+  opacity: .5;
+}
 
 .watermark{
   display: block;

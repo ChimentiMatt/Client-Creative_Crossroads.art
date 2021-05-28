@@ -1,12 +1,12 @@
 import React from 'react';
-import Glory from "./img-phot/glory.jpeg"
+import Lake from "./img-phot/worlds2.jpg"
 
 
 export default function ContactPage() {
     return(
         <div >
             <div className="container-contact-img">
-                <img src={Glory}></img>
+                <img src={Lake}></img>
             </div>
             <div className="container-contact-body">
                 <h2>Contact</h2>

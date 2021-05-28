@@ -54,22 +54,24 @@ class App extends React.Component {
             <h1 className="intro-h1">CREATIVE CROSSROADS</h1>
             <img className="watermark" src={Logo5} ></img>
             <div className="container-rows">
-              <div className="row1-buttons">
-                <button className="intro-page-btn1" onClick={() => this.setState({ intro: false })}>Photography</button>
-                {/* <p>•</p> */}
-                <button className="intro-page-btn2" onClick={() => this.setState({ intro: false })}>Weddings </button>
-                {/* <p>•</p> */}
-                <button className="intro-page-btn3" onClick={() => this.setState({ intro: false })}>Headshots</button>
-              </div>
-              <div className="row2-buttons">
-                <button className="intro-page-btn4" onClick={() => this.setState({ intro: false })}>Family Portraits</button>
-                {/* <p>•</p> */}
-                <button className="intro-page-btn5" onClick={() => this.setState({ intro: false })}>Musical Performances</button>
-              </div>
+              <Router>
+                <div className="row1-buttons">
+                  <NavLink  className="intro-links" to="/photography">Photography</NavLink>
+                  
+                  <NavLink className="intro-links" to="/wedding">Weddings</NavLink>
+
+                  <NavLink  className="intro-links" to="/headshots">Headshots</NavLink>
+                </div>
+                
+                <div className="row2-buttons">
+                  <NavLink  className="intro-links" to="/familyportrait">Family Portraits</NavLink>
+
+                  <NavLink  className="intro-links" to="/music">Musical Performances</NavLink>
+                </div>
+             </Router>
             </div>
             {/* Hidden button  */}
           </div>
-          <button className="intro-page-btn-catch-all" onClick={() => this.setState({ intro: false })}>.</button>
           <div className="intro-page-img"></div>
         </div>
 
