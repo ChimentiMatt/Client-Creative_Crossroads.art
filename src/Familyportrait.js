@@ -20,24 +20,15 @@ import {
 export default function FamilyPortraitPage(props) {
   return (
     <div className="family-page">
-      {/* <Test cat={props.cat}/> */}
-
       <Slideshow />
-      {/* <Gallery/> */}
-
     </div>
   )
 }
 
-
-// function Test(props) {
-//     return( 
-//     alert(`${props.cat} are going to ruin us all!`)
-//     )
-// }
-
-// function Active(props) {
-//     props.makeActive('active')
+// setStateAndRunCallback = (val) => {
+//   this.setState(val, () => {
+//       this.props.toCallBack(this.state.activeLink: true);
+//   });
 // }
 
 
@@ -47,9 +38,6 @@ const delay = 5000;
 function Slideshow() {
   const [index, setIndex] = React.useState(0);
   const timeoutRef = React.useRef(null);
-
-
-
 
   function resetTimeout() {
     if (timeoutRef.current) {
@@ -77,41 +65,41 @@ function Slideshow() {
   return (
     <div>
       <div className="container-slide">
-      <div
-        className="slideshowSlider"
-        style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
-      >
-        {images.map((img, index) => (
-          <img
-            src={img} className="slide"
-            key={index}
-            style={{ img }}
-          />
+        <div
+          className="slideshowSlider"
+          style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
+        >
+          {images.map((img, index) => (
+            <img
+              src={img} className="slide"
+              key={index}
+              style={{ img }}
+            />
 
-        ))}
-      </div>
+          ))}
+        </div>
 
-      <div className="slideshowDots">
-        {images.map((_, idx) => (
+        <div className="slideshowDots">
+          {images.map((_, idx) => (
 
-          <div
-            key={idx}
-            className={`slideshowDot${index === idx ? " active" : ""}`}
-            onClick={() => {
-              setIndex(idx);
-            }}
-          ></div>
-        ))}
+            <div
+              key={idx}
+              className={`slideshowDot${index === idx ? " active" : ""}`}
+              onClick={() => {
+                setIndex(idx);
+              }}
+            ></div>
+          ))}
 
-      </div>
-      <div className="left-arrow"></div>
+        </div>
+        <div className="left-arrow"></div>
 
       </div>
 
       <div className="line"></div>
       <div className="family-about">
 
-          <p>Capture fleeting moments with a collection of photographs out in nature or at a venue of your liking. You can even bring your fur family to include everyone. </p>
+        <p>Capture fleeting moments with a collection of photographs out in nature or at a venue of your liking. You can even bring your fur family to include everyone. </p>
 
       </div>
 
@@ -128,7 +116,6 @@ function Slideshow() {
           <button class="form-btn" >Submit Form</button>
         </div>
         <img className="right-img" src={Girl} alt="test" />
-
       </div>
 
 

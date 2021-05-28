@@ -2,6 +2,7 @@ import React from 'react'
 import './App.css';
 
 import { render } from "react-dom";
+import { NavLink } from 'react-router-dom';
 
 import BasicRows from "./photos.js";
 import PhotoInfo from "./PhotosInfo.js";
@@ -14,6 +15,10 @@ import ContactPage from './contact.js'
 import PianoCamera from "./img-phot/camera-square.jpeg";
 import Logo from "./img-phot/Watermark.png";
 import LogoHeader from "./img-phot/Watermark-for-header.png";
+import Logo2 from "./img-phot/Watermark2.png";
+import Logo3 from "./img-phot/Watermark3.png";
+import Logo4 from "./img-phot/Watermark4.png";
+import Logo5 from "./img-phot/Watermark5.png";
 import {
   BrowserRouter as Router,
   Switch,
@@ -30,21 +35,12 @@ class App extends React.Component {
     super(props);
     this.state = {
       intro: true,
-      activePage: false,
-      cat: 'kittens',
-      activeLink: 'dormant'
+      // activePage: false,
+      // cat: 'kittens',
+      activeLink: false
     };
   }
 
-  makeActive(params) {
-    this.setState({
-      activeLink: params
-    })
-  }
-
-  // function mActive(params) {
-  //   const {  }
-  // }
 
   render() {
 
@@ -56,21 +52,24 @@ class App extends React.Component {
           <div className="container-intro-texts">
 
             <h1 className="intro-h1">CREATIVE CROSSROADS</h1>
-            <img className="watermark" src={LogoHeader} ></img>
+            <img className="watermark" src={Logo5} ></img>
             <div className="container-rows">
               <div className="row1-buttons">
                 <button className="intro-page-btn1" onClick={() => this.setState({ intro: false })}>Photography</button>
+                {/* <p>•</p> */}
                 <button className="intro-page-btn2" onClick={() => this.setState({ intro: false })}>Weddings </button>
+                {/* <p>•</p> */}
                 <button className="intro-page-btn3" onClick={() => this.setState({ intro: false })}>Headshots</button>
               </div>
               <div className="row2-buttons">
                 <button className="intro-page-btn4" onClick={() => this.setState({ intro: false })}>Family Portraits</button>
+                {/* <p>•</p> */}
                 <button className="intro-page-btn5" onClick={() => this.setState({ intro: false })}>Musical Performances</button>
               </div>
             </div>
             {/* Hidden button  */}
           </div>
-            <button className="intro-page-btn-catch-all" onClick={() => this.setState({ intro: false })}>.</button>
+          <button className="intro-page-btn-catch-all" onClick={() => this.setState({ intro: false })}>.</button>
           <div className="intro-page-img"></div>
         </div>
 
@@ -82,25 +81,26 @@ class App extends React.Component {
             <div className="container-heading">
               <p className="header-font">CREATIVE CROSSROADS</p>
               <div>
-                <img className="header-watermark" src={LogoHeader} ></img>
+                <img className="header-watermark" src={Logo5} ></img>
 
                 <div className="about-contact">
-                <Link id="about" className="links" to="/about">About</Link>
+                <NavLink activeClassName="selected" activeStyle={{ opacity: 1}} className="links" to="/about">About</NavLink>
 
-                <Link id="contact" className="links" to="/contact">Contact</Link>  
+                  <NavLink activeClassName="selected" activeStyle={{ opacity: 1}} className="links"to="/contact">Contact</NavLink>
                 </div>
               </div>
+
               <div className='container-a-tag'>
-                <Link className="links" to="/photography">Photography</Link>
+                <NavLink activeClassName="selected" activeStyle={{ opacity: 1}} className="links" to="/photography">Photography</NavLink>
+      
+                <NavLink activeClassName="selected" activeStyle={{ opacity: 1}} className="links" to="/wedding">Wedding Photography</NavLink>
 
-                <Link className="links" to="/wedding">Wedding Photography</Link>
+                <NavLink activeClassName="selected" activeStyle={{ opacity: 1}} className="links" to="/headshots">Headshots</NavLink>
 
-                <Link className="links" to="/headshots">Headshots</Link>
+                <NavLink activeClassName="selected" activeStyle={{ opacity: 1}} className="links" to="/familyportrait">Family Portraits</NavLink>
 
-                <Link id={this.state.active} className="links" to="/familyportrait">Family Portraits</Link>
+                <NavLink activeClassName="selected"activeStyle={{ opacity: 1}} className="links" to="/music">Musical Performances</NavLink>
 
-                <Link className="links" to="/music">Musical Performances</Link>
-          
 
 
               </div>
@@ -114,7 +114,7 @@ class App extends React.Component {
 
                 <Route exact path="/photography">
 
-                  <div className="container-photos"> 
+                  <div className="container-photos">
                     <BasicRows />
                     <PhotoInfo />
                   </div>
@@ -128,18 +128,18 @@ class App extends React.Component {
                 </Route>
 
                 <Route exact path="/familyportrait" >
-                  <FamilyPortraitPage makeActive={this.makeActive.bind(this)} />
+                  <FamilyPortraitPage toCallBack={(childState) => this.childStateCallback(childState)} />
                 </Route>
-                
+
                 <Route exact path="/music">
                   <ContactPage />
-                  </Route>
+                </Route>
 
                 <Route exact path="/contact">
                   <ContactPage />
                 </Route>
 
-               
+
                 <Route exact path="">
                   <AboutPage />
                 </Route>

@@ -14,9 +14,6 @@
 }
 
 /* Universal CSS */
-.color{
-  color: #f0987d;
-}
 
 
 /* Into Page --------------------------------------------------------- */
@@ -52,11 +49,11 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  color: #f14f4f;
+  /* color: #f14f4f; */
   /* left: 62.5%;
   top: 40%; */
   z-index: 1;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   /* border: 1px solid black; */
 }
 
@@ -66,15 +63,15 @@
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .container-rows{
   display: flex;
   flex-direction: column;
   /* border: 1px solid blue; */
-  margin-left: 120px;
-  margin-right: 120px;
+  margin-left: 135px;
+  margin-right: 135px;
 }
 
 .row1-buttons{
@@ -141,10 +138,10 @@
   border: none !important;
   font-size:0;
   z-index: 1;
-   color:
+ 
 }
 
-.intro-page-btn1:hover{
+/* .intro-page-btn1:hover{
   opacity: .7;
 } 
 .intro-page-btn2:hover{
@@ -159,7 +156,7 @@
 .intro-page-btn5:hover{
   opacity: .7;
 } 
-
+ */
 
 
 
@@ -167,9 +164,7 @@
 /* App Container */
 .container-app{
 }
-#active{
-  color: red;
-} 
+
 
 #dorment{
   color: black;
@@ -183,14 +178,15 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  color: black  ;
+  color: black ;
   
   padding-top: 10px;
 }
 
 .header-font{
   font-size: 50px;
-  color: #f14f4f;
+  /* color: #f14f4f; */
+  color: black;
   margin-top: 15px;
 }
 
@@ -217,7 +213,7 @@
 
 .about-contact{
   margin-bottom: 20px;
-
+  margin-top: 10px;
 }
 #about{
   color: #040007;
@@ -231,7 +227,7 @@
   display: flex;
   justify-content: center;
   border-top: 1px solid rgb(172, 172, 172);
-  border-bottom: 1px solid ;
+  border-bottom: 1px solid rgb(172, 172, 172);;
   padding-top: 25px;
   padding-bottom: 25px;
 
@@ -244,10 +240,13 @@
   /* color: #f0987d; */
   text-align: center;
   color: black;
+  opacity: .6;
   text-decoration: none;
 }
 
-
+.selected{
+  font-weight: 700
+}
 
 
 
@@ -615,4 +614,5 @@
   font-size: 15px;
   margin-top: 50px;
   align-items: center;
+  letter-spacing: 2px;
 }
