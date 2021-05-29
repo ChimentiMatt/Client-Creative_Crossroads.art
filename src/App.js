@@ -11,6 +11,7 @@ import AboutPage from './about';
 import FamilyPortraitPage from './Familyportrait.js';
 import BottomBar from './BottomBar.js'
 import ContactPage from './contact.js'
+import HeadshotsPage from './Headshots.js'
 
 import PianoCamera from "./img-phot/camera-square.jpeg";
 import Logo from "./img-phot/Watermark.png";
@@ -92,7 +93,7 @@ class App extends React.Component {
                 <img className="header-watermark" src={Logo5} ></img>
 
                 <div className="about-contact">
-                <NavLink activeClassName="selected" activeStyle={{ opacity: 1}} className="links" to="/about">About</NavLink>
+                  <NavLink activeClassName="selected" activeStyle={{ opacity: 1}} className="links" to="/about">About</NavLink>
 
                   <NavLink activeClassName="selected" activeStyle={{ opacity: 1}} className="links"to="/contact">Contact</NavLink>
                 </div>
@@ -133,6 +134,7 @@ class App extends React.Component {
                 </Route>
 
                 <Route exact path="/headshots">
+                  <HeadshotsPage />
                 </Route>
 
                 <Route exact path="/familyportrait" >
