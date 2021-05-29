@@ -53,20 +53,26 @@ class App extends React.Component {
 
             <h1 className="intro-h1">CREATIVE CROSSROADS</h1>
             <img className="watermark" src={Logo5} ></img>
+
             <div className="container-rows">
               <Router>
+                <div className="row0-buttons">
+                  <NavLink onClick={() => this.setState({ intro: false })} className="intro-links" id="intro-about" to="/about">About</NavLink>
+                  <NavLink onClick={() => this.setState({ intro: false })} className="intro-links" id="intro-contact" to="/contact">Contact</NavLink>
+                </div>
+    
                 <div className="row1-buttons">
-                  <NavLink  className="intro-links" to="/photography">Photography</NavLink>
+                  <NavLink onClick={() => this.setState({ intro: false })} className="intro-links" to="/photography">Photography</NavLink>
                   
-                  <NavLink className="intro-links" to="/wedding">Weddings</NavLink>
+                  <NavLink onClick={() => this.setState({ intro: false })} className="intro-links" to="/wedding">Weddings</NavLink>
 
-                  <NavLink  className="intro-links" to="/headshots">Headshots</NavLink>
+                  <NavLink onClick={() => this.setState({ intro: false })} className="intro-links" to="/headshots">Headshots</NavLink>
                 </div>
                 
                 <div className="row2-buttons">
-                  <NavLink  className="intro-links" to="/familyportrait">Family Portraits</NavLink>
+                  <NavLink onClick={() => this.setState({ intro: false })} className="intro-links" to="/familyportrait">Family Portraits</NavLink>
 
-                  <NavLink  className="intro-links" to="/music">Musical Performances</NavLink>
+                  <NavLink onClick={() => this.setState({ intro: false })} className="intro-links" to="/music">Musical Performances</NavLink>
                 </div>
              </Router>
             </div>

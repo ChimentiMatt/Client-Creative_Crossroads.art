@@ -60,9 +60,13 @@
 .intro-links{
   text-decoration: none;
   color: black;
+  /* font-weight: 700; */
+  opacity: .7;
 }
+
 .intro-links:hover{
-  opacity: .5;
+  opacity: 1;
+   font-weight: 700; 
 }
 
 .watermark{
@@ -75,10 +79,29 @@
 
 .container-rows{
   display: flex;
+  justify-content: center;
   flex-direction: column;
   /* border: 1px solid blue; */
   margin-left: 135px;
   margin-right: 135px;
+
+}
+
+.row0-buttons{
+  justify-content: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+  margin-left: 65px;
+  margin-right: 65px;
+  padding-bottom: 5px;
+}
+#intro-about{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#intro-contact{
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .row1-buttons{
@@ -136,17 +159,6 @@
 }
 
 
-.intro-page-btn-catch-all{
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background: transparent;
-  border: none !important;
-  font-size:0;
-  z-index: 1;
- 
-}
 
 /* .intro-page-btn1:hover{
   opacity: .7;
@@ -247,7 +259,7 @@
   /* color: #f0987d; */
   text-align: center;
   color: black;
-  opacity: .6;
+  opacity: .7;
   text-decoration: none;
 }
 
