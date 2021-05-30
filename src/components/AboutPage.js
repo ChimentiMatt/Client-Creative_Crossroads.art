@@ -1,5 +1,5 @@
 import React from 'react';
-import centerpieceImg from "./img-phot/suzanne-cropped.jpg"
+import centerpieceImg from "../img-phot/suzanne-cropped.jpg"
 import {
     BrowserRouter as Router,
     Switch,

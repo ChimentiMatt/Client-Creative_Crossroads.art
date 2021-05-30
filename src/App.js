@@ -4,14 +4,14 @@ import './App.css';
 import { render } from "react-dom";
 import { NavLink } from 'react-router-dom';
 
-import BasicRows from "./photos.js";
-import PhotoInfo from "./PhotosInfo.js";
-import WeddingPage from './Wedding.js';
-import AboutPage from './about';
-import FamilyPortraitPage from './Familyportrait.js';
-import BottomBar from './BottomBar.js'
-import ContactPage from './contact.js'
-import HeadshotsPage from './Headshots.js'
+import BasicRows from "./components/PhotographyPage.js";
+import PhotoInfo from "./components/PhotographyInfo.js";
+import WeddingPage from './components/WeddingsPage.js';
+import AboutPage from './components/AboutPage.js';
+import FamilyPortraitPage from './components/FamilyPortraitPage.js';
+import BottomBar from './components/BottomBar.js'
+import ContactPage from './components/contactPage.js'
+import HeadshotsPage from './components/HeadshotsPage.js'
 
 import PianoCamera from "./img-phot/camera-square.jpeg";
 import Logo from "./img-phot/Watermark.png";

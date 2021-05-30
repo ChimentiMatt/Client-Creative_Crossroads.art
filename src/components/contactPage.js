@@ -1,17 +1,21 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 
-import Lake from "./img-phot/worlds2.jpg"
-import LakeCropped from "./img-phot/worlds2.jpg"
-import Lake2 from "./img-phot/two-worlds.jpeg"
+import Lake from "../img-phot/worlds2.jpg"
+import LakeCropped from "../img-phot/worlds2.jpg"
+import Lake2 from "../img-phot/two-worlds.jpeg"
 
 
 export default function ContactPage() {
     const [disabled, setDisabled] = useState(false);
+    const [visibility, setBlock] = useState('none')
+    const [hide, setHidden] = useState('visible')
 
     function sendEmail(e) {
         e.preventDefault();
         setDisabled(true)
+        setBlock('block')
+        setHidden('none')
         emailjs.sendForm('service_2201c2n', "template_a70c99a", e.target, 'user_7oFNkpAKDIKus9MJJpUuF')
             .then((result) => {
                 console.log("result text", result.text);
@@ -21,8 +25,6 @@ export default function ContactPage() {
                 
             });
     }
-
-
 
     return (
         <div >
@@ -34,13 +36,20 @@ export default function ContactPage() {
                 <p>Want to book for Photos or Music?</p>
                 <p>Have any specific requests or questions?</p>
                 <p>Email: sfchim@msn.com</p>
+                <p>Email me, or fill out the form below.</p>
             </div>
 
-            {/* <div className="contact-line"></div> */}
+            <div className="line"></div>
 
+            <div className='sent-message'>
+                    <p style={{display: visibility}}>Thank you for your request. </p>
+                    <p style={{display: visibility}}>You will recieve a call within 24 Hours</p>
+                    <p style={{display: visibility}}>Suzanne Chimenti</p>
+                    <p style={{display: hide}}>Make Contact</p>
+                    <p style={{display: hide}}>by filling out the form below</p>
+            </div>
             <div className="container-contact-form">
                 <div className="inner-container-contact-form">
-                    <p><span className="underline">Email me,</span> or fill out the form below.</p>
 
                     <form onSubmit={sendEmail}>
                         <label>

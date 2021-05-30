@@ -1,13 +1,13 @@
 import React from 'react';
-import img1 from "./img-family/img1.jpeg";
-import img2 from "./img-family/img2.jpeg";
-import img3 from "./img-family/img3.jpeg";
-import img4 from "./img-family/img4.jpeg";
-import img5 from "./img-family/img5.jpeg";
+import img1 from "../img-family/img1.jpeg";
+import img2 from "../img-family/img2.jpeg";
+import img3 from "../img-family/img3.jpeg";
+import img4 from "../img-family/img4.jpeg";
+import img5 from "../img-family/img5.jpeg";
 // import img6 from "./img-family/img6.jpeg";
-import img7 from "./img-family/img7.jpeg";
-import img8 from "./img-family/img8.jpeg";
-import Girl from "./img-family/squared-girl.jpg";
+import img7 from "../img-family/img7.jpeg";
+import img8 from "../img-family/img8.jpeg";
+import Girl from "../img-family/squared-girl.jpg";
 import {
   BrowserRouter as Router,
   Switch,
