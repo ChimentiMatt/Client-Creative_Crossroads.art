@@ -52,11 +52,14 @@ class App extends React.Component {
         <div className="intro-page">
           <div className="container-intro-texts">
 
-            <h1 className="intro-h1">CREATIVE CROSSROADS</h1>
+            <h1 className="intro-h1" ></h1>
+     
+            <Router>
+            <NavLink onClick={() => this.setState({ intro: false })} className="intro-h1" to="/about">CREATIVE CROSSROADS</NavLink>
             <img className="watermark" src={Logo5} ></img>
 
             <div className="container-rows">
-              <Router>
+  
                 <div className="row0-buttons">
                   <NavLink onClick={() => this.setState({ intro: false })} className="intro-links" id="intro-about" to="/about">About</NavLink>
                   <NavLink onClick={() => this.setState({ intro: false })} className="intro-links" id="intro-contact" to="/contact">Contact</NavLink>
@@ -75,16 +78,15 @@ class App extends React.Component {
 
                   <NavLink onClick={() => this.setState({ intro: false })} className="intro-links" to="/music">Musical Performances</NavLink>
                 </div>
-             </Router>
+        
             </div>
+             </Router>
             {/* Hidden button  */}
           </div>
           <div className="intro-page-img"></div>
         </div>
 
         : <div className="container-app">
-
-
 
           <Router>
             <div className="container-heading">
@@ -102,13 +104,13 @@ class App extends React.Component {
               <div className='container-a-tag'>
                 <NavLink activeClassName="selected" activeStyle={{ opacity: 1}} className="links" to="/photography">Photography</NavLink>
       
-                <NavLink activeClassName="selected" activeStyle={{ opacity: 1}} className="links" to="/wedding">Wedding Photography</NavLink>
+                <NavLink activeClassName="selected" activeStyle={{ opacity: 1}} className="links" to="/wedding">Weddings</NavLink>
 
                 <NavLink activeClassName="selected" activeStyle={{ opacity: 1}} className="links" to="/headshots">Headshots</NavLink>
 
-                <NavLink activeClassName="selected" activeStyle={{ opacity: 1}} className="links" to="/familyportrait">Family Portraits</NavLink>
+                <NavLink activeClassName="selected" activeStyle={{ opacity: 1}} className="links" to="/familyportrait">Family</NavLink>
 
-                <NavLink activeClassName="selected"activeStyle={{ opacity: 1}} className="links" to="/music">Musical Performances</NavLink>
+                <NavLink activeClassName="selected"activeStyle={{ opacity: 1}} className="links" to="/music">Music</NavLink>
 
 
 

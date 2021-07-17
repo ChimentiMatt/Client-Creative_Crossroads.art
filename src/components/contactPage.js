@@ -35,18 +35,18 @@ export default function ContactPage() {
                 <h2>Contact</h2>
                 <p>Want to book for Photos or Music?</p>
                 <p>Have any specific requests or questions?</p>
+                <p>Eamil me or fill out the form below</p>
                 <p>Email: sfchim@msn.com</p>
-                <p>Email me, or fill out the form below.</p>
             </div>
 
-            <div className="line"></div>
+
 
             <div className='sent-message'>
-                    <p style={{display: visibility}}>Thank you for your request. </p>
-                    <p style={{display: visibility}}>You will recieve a call within 24 Hours</p>
-                    <p style={{display: visibility}}>Suzanne Chimenti</p>
-                    <p style={{display: hide}}>Make Contact</p>
-                    <p style={{display: hide}}>by filling out the form below</p>
+                <div style={{display: visibility}} className="line"></div>
+                <h3 style={{display: visibility}}>Thank you </h3>
+                <p style={{display: visibility}}>You will recieve a call within 24 Hours</p>
+                <p style={{display: visibility}}>Suzanne Chimenti</p>
+
             </div>
             <div className="container-contact-form">
                 <div className="inner-container-contact-form">
@@ -67,7 +67,7 @@ export default function ContactPage() {
 
                         <label for="product">
                             <select disabled={disabled} name="product" class="product-drop-down">
-                                <option value="Weddings">Choose A Product</option>
+                                <option value="Weddings">Interested In</option>
                                 <option value="Weddings">Weddings</option>
                                 <option value="Photography">Photography</option>
                                 <option value="Headshots">Headshots</option>

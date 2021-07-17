@@ -19,12 +19,13 @@
 /* Into Page --------------------------------------------------------- */
 .intro-page{
   height: 100vh;
-
+  width: 100vw;
 }
 
 .intro-page-img { 
-  background-image: url("./img-phot/camera-welcome.jpg");
+  background-image: url("./img-phot/camera-welcome2.jpg");
   height: 100%;
+
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
@@ -49,6 +50,9 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  text-decoration: none;
+  font-size: 50px;
+  color: black;
   /* color: #f14f4f; */
   /* left: 62.5%;
   top: 40%; */
@@ -61,7 +65,7 @@
   text-decoration: none;
   color: black;
   /* font-weight: 700; */
-  opacity: .7;
+
 }
 
 .intro-links:hover{
@@ -522,11 +526,12 @@
 .container-contact-body h2{
   letter-spacing: 4px;
   font-size: 35px;
+  margin-bottom: 40px;
   /* color: #f0987d; */
 }
 
 .container-contact-body p{
-  margin-top: 25px;
+  margin-top: 10px;
   text-align: center;
 }
 
@@ -540,7 +545,7 @@
   height: 550px;
   justify-content: center;
   /* background-color: rgb(239,220,205); */
-  margin-top: 25px;
+  /* margin-top: 25px; */
   /* background-color: rgb(231, 230, 230); */
 }
 .sent-message{
@@ -548,11 +553,18 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-.sent-message p {
-  padding-bottom: 15px;
-  padding-top: 15px;
+.sent-message p  {
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.sent-message h3 {
+  padding-bottom: 5px;
+  padding-top: 5px;
+  font-size: 35px;
 }
 
 .right-img{
@@ -641,3 +653,94 @@
 
 
 
+@media (max-width: 800px) {
+  .intro-page{
+    max-height: 100vh;
+    max-width: 300px;
+
+  }
+
+  .intro-page-img{
+    top: -150px;
+    width: 100vw;
+  }
+  .container-intro-texts{
+    justify-content: center;
+    width: 100vw;
+    left: 0;
+
+    top: 355px;
+  }
+  .intro-h1{
+    color: white;
+    font-size: 35px;
+  }
+  .watermark{
+    display: none;
+  }
+  .intro-links{
+    display: none;
+  }
+
+  /* title out of landing */
+  .header-font{
+    margin-top: 10px;
+    font-size: 35px;
+  }
+  .header-watermark{
+    height: 50px;
+  }
+  .about-contact{
+    font-size: 15px;
+
+    margin-bottom: 10px;
+  }
+  .container-a-tag{
+    font-size: 15px;
+  }
+  .links{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* About */
+  .container-home{
+    width: 100vw;
+    background-color: rgba(255, 0, 0, 0.096);
+  }
+  .container-about-img{
+    object-fit: contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 0px;
+    width: 0px;
+    max-width: 100px;
+    margin-top: 25px;
+    display: none;
+  }
+  .about-heading-text{
+    margin-top: 10px;
+  }
+
+  .container-about-text{
+    word-wrap: break-word;
+    word-wrap: break-word;
+    border-bottom: 1px solid black;
+  }
+  .about-text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 10px;
+    width: 100vw;
+  }
+
+  /* photography page */
+  .container-photos{
+    margin: 5px;
+  }
+
+}
