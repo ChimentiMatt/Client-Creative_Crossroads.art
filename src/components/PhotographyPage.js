@@ -149,7 +149,18 @@ const photos = [
         width: 2465,
         height: 1451
     },
-
 ];
-const BasicRows = () => <Gallery id='1' photos={photos} />;
+
+// temporary function that shows sucessful selection of photo
+const logFun = event => {
+    console.log('cats')
+}
+
+const BasicRows = () => 
+<Gallery 
+id='1' 
+photos={photos} 
+onClick={logFun}
+/>
+
 export default BasicRows

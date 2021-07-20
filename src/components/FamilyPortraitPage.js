@@ -105,7 +105,7 @@ function Slideshow() {
 
       <div className="line"></div>
 
-      <div className="container-family-form">
+      {/* <div className="container-family-form">
         <div className="inner-container-family-form">
           <h2>Schedule Your Family</h2>
           <input class="form-field" placeholder="Name"></input>
@@ -116,7 +116,7 @@ function Slideshow() {
           <button class="form-btn" >Submit Form</button>
         </div>
         <img className="right-img" src={Girl} alt="test" />
-      </div>
+      </div> */}
 
 
       <br></br>

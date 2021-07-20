@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 
-
-
-
 export default function PhotoInfo() {
     const [disabled, setDisabled] = useState(false);
     const [visibility, setBlock] = useState('none')
@@ -23,9 +20,6 @@ export default function PhotoInfo() {
 
             });
     }
-
-
-
 
     return (
         <div >
