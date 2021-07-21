@@ -1,13 +1,23 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
+import ImageGallery from 'react-image-gallery';
+
+
+import dustin1 from '../img-headshots/dustin.jpeg'
+import grif1 from '../img-headshots/grif.jpeg'
+import june1 from '../img-headshots/June.jpeg'
+import juneHus from '../img-headshots/junehus.jpeg'
 
 export default function Headshots(props) {
   return (
-    <div className="family-page">
+    <div >
       <FormHeadshots />
     </div>
   )
 }
+
+
+
 
 
 function FormHeadshots(params) {
@@ -29,10 +39,30 @@ function FormHeadshots(params) {
 
       });
   }
-
+  const images = [
+    {
+      original: `${dustin1}`,
+      thumbnail: `${dustin1}`,
+    },
+    {
+      original: `${grif1}`,
+      thumbnail: `${grif1}`,
+    },
+    {
+      original: `${june1}`,
+      thumbnail: `${june1}`,
+    },
+    {
+      original: `${juneHus}`,
+      thumbnail: `${juneHus}`,
+    },
+  ];
 
   return (
     <>
+      <div id="headshot-gallery">
+        <ImageGallery items={images} />
+      </div>
       <div className="line"></div>
 
       <div className="container-contact-body">

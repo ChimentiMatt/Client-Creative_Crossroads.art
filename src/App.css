@@ -2,6 +2,10 @@
         
 @import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap');
+
+/* The css for any react image gallery */
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
 * {
   /* font-family: 'MORVA', sans-serif; */
   /* letter-spacing: 3px; */
@@ -628,6 +632,10 @@
 }
 
 
+/* Headshost Page */
+#headshot-gallery{
+  margin-top: 50px;
+}
 
 
 /* Footer */
