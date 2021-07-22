@@ -11,12 +11,39 @@ import juneHus from '../img-headshots/junehus.jpeg'
 export default function Headshots(props) {
   return (
     <div >
+      <GalleryHeadshots />
       <FormHeadshots />
     </div>
   )
 }
 
-
+function GalleryHeadshots() {
+  const images = [
+    {
+      original: `${dustin1}`,
+      thumbnail: `${dustin1}`,
+    },
+    {
+      original: `${grif1}`,
+      thumbnail: `${grif1}`,
+    },
+    {
+      original: `${june1}`,
+      thumbnail: `${june1}`,
+    },
+    {
+      original: `${juneHus}`,
+      thumbnail: `${juneHus}`,
+    },
+  ];
+  return(
+    <>
+      <div id="headshot-gallery">
+        <ImageGallery items={images} />
+      </div>
+    </>
+  )
+}
 
 
 
@@ -39,30 +66,11 @@ function FormHeadshots(params) {
 
       });
   }
-  const images = [
-    {
-      original: `${dustin1}`,
-      thumbnail: `${dustin1}`,
-    },
-    {
-      original: `${grif1}`,
-      thumbnail: `${grif1}`,
-    },
-    {
-      original: `${june1}`,
-      thumbnail: `${june1}`,
-    },
-    {
-      original: `${juneHus}`,
-      thumbnail: `${juneHus}`,
-    },
-  ];
+
+
 
   return (
     <>
-      <div id="headshot-gallery">
-        <ImageGallery items={images} />
-      </div>
       <div className="line"></div>
 
       <div className="container-contact-body">

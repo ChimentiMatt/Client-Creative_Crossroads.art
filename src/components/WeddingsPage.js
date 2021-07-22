@@ -1,6 +1,22 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-import wedding1 from "../img-wedding/wedding1.jpeg";
+
+import ImageGallery from 'react-image-gallery';
+
+import vicky1 from '../img-wedding/vicky1.jpg'
+import vicky2 from '../img-wedding/vicky5.jpg'
+import rings from '../img-wedding/rings1.jpg'
+import forest from '../img-wedding/forest2.jpeg'
+import drone from '../img-wedding/drone1.jpg'
+import maids from '../img-wedding/maids3.jpeg'
+import men from '../img-wedding/men1.jpg'
+import nightVicky from '../img-wedding/vicky3.jpg'
+import party from '../img-wedding/party1.jpg'
+import car from '../img-wedding/car.jpg'
+import legs from '../img-wedding/legs.jpeg'
+import blackWhite from '../img-wedding/couple1.jpg'
+import vickyArch from '../img-wedding/vicky4.jpg'
+import ido from '../img-wedding/ido.jpeg'
 
 import {
     BrowserRouter as Router,
@@ -15,70 +31,76 @@ import {
 export default function WeddingPage() {
     return (
         <div className="family-page">
-            <WeddingSlideshow />
+            <WeddingGallery />
             <FormWedding />
-        </div>
-    )
-}
-
-
-const images = [wedding1];
-const delay = 5000;
-
-function WeddingSlideshow() {
-    const [index, setIndex] = React.useState(0);
-    const timeoutRef = React.useRef(null);
-
-    function resetTimeout() {
-        if (timeoutRef.current) {
-            clearTimeout(timeoutRef.current);
-        }
-    }
-
-
-    React.useEffect(() => {
-        resetTimeout();
-        timeoutRef.current = setTimeout(
-            () =>
-                setIndex((prevIndex) =>
-                    prevIndex === images.length - 1 ? 0 : prevIndex + 1
-                ),
-            delay
-        );
-        return () => {
-            resetTimeout();
-        };
-    }, [index]);
-
-    return (
-        <div className="container-slide">
-            <div
-                className="slideshowSlider"
-                style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
-            >
-                {images.map((img, index) => (
-                    <img
-                        src={img} className="slide"
-                        key={index}
-                        style={{ img }}
-                    />
-                ))}
-            </div>
-
-            <div className="slideshowDots">
-                {images.map((_, idx) => (
-                    <div
-                        key={idx}
-                        className={`slideshowDot${index === idx ? " active" : ""}`}
-                        onClick={() => {
-                            setIndex(idx);
-                        }}
-                    ></div>
-                ))}
-            </div>
+        
         </div>
     );
 }
+
+function WeddingGallery( ) {
+    const images = [
+        {
+          original: `${vicky2}`,
+          thumbnail: `${vicky2}`,
+        },
+        {
+          original: `${forest}`,
+          thumbnail: `${forest}`,
+        },
+        {
+          original: `${rings}`,
+          thumbnail: `${rings}`,
+        },
+        {
+          original: `${vicky1}`,
+          thumbnail: `${vicky1}`,
+        },
+        {
+            original: `${vickyArch}`,
+            thumbnail: `${vickyArch}`,
+          },
+          {
+            original: `${ido}`,
+            thumbnail: `${ido}`,
+          },
+          {
+            original: `${maids}`,
+            thumbnail: `${maids}`,
+          },
+          {
+            original: `${party}`,
+            thumbnail: `${party}`,
+          },
+          {
+            original: `${men}`,
+            thumbnail: `${men}`,
+          },
+          {
+            original: `${car}`,
+            thumbnail: `${car}`,
+          },
+          {
+            original: `${blackWhite}`,
+            thumbnail: `${blackWhite}`,
+          },
+          {
+            original: `${legs}`,
+            thumbnail: `${legs}`,
+          },
+          
+
+
+
+        
+      ];
+    return(
+        <>
+        <ImageGallery items={images} />
+        </>
+    )
+}
+
 
 function FormWedding(params) {
     const [disabled, setDisabled] = useState(false);
@@ -99,7 +121,7 @@ function FormWedding(params) {
 
             });
     }
-
+    
 
     return (
         <>
