@@ -1,12 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import emailjs from 'emailjs-com';
+import centerpieceImg from "../img-phot/suzanne-cropped.jpg"
 
-import Lake from "../img-phot/worlds2.jpg"
-import LakeCropped from "../img-phot/worlds2.jpg"
-import Lake2 from "../img-phot/two-worlds.jpeg"
-
-
-export default function ContactPage() {
+export default function MusicPage() {
     const [disabled, setDisabled] = useState(false);
     const [visibility, setBlock] = useState('none')
     const [hide, setHidden] = useState('visible')
@@ -16,8 +12,8 @@ export default function ContactPage() {
         setDisabled(true)
         setBlock('block')
         setHidden('none')
-        document.getElementById('contact-h3').innerHTML = 'Thank You'
-        document.getElementById('contact-h3').style.color = 'Teal'
+        document.getElementById('music-h3').innerHTML = 'Thank You'
+        document.getElementById('music-h3').style.color = 'Teal'
         emailjs.sendForm('service_2201c2n', "template_a70c99a", e.target, 'user_7oFNkpAKDIKus9MJJpUuF')
             .then((result) => {
                 console.log("result text", result.text);
@@ -31,7 +27,7 @@ export default function ContactPage() {
     return (
         <div >
             <div className="container-contact-img">
-                <img id="contact-img" src={Lake}></img>
+            <img id="music-img" src={centerpieceImg} alt="test" />
             </div>
             <div className="container-contact-body">
                 <h2>Contact</h2>
@@ -45,7 +41,7 @@ export default function ContactPage() {
 
             <div className='sent-message'>
 
-                <h3 id='contact-h3'>Contact Me </h3>
+                <h3 id='music-h3'>Contact Me </h3>
                 <p style={{display: visibility}}>You will recieve a call within 24 Hours</p>
                 <p style={{display: visibility}}>Suzanne Chimenti</p>
 

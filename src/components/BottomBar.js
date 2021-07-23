@@ -8,8 +8,11 @@ export default function BottomBar() {
   
             <div className="footer">  
                 <div className="footer-text">   
-                    <p>CREATIVE CROSSROADS, SUZANNE CHIMENTI PHOTOGRAPHY</p>
-                    <p>ITHICA FULL STACK 2021</p>
+                    <div className="footer-left-container">
+                        <p>CREATIVE CROSSROADS,</p> 
+                        <p>SUZANNE CHIMENTI PHOTOGRAPHY</p>
+                    </div>
+                    <p>ITHICA WEB DESIGN</p>
                 </div>  
             </div>
         </div>

@@ -75,7 +75,7 @@ function FamilyContent() {
     setHidden('none')
     document.getElementById('family-h3').innerHTML = 'Thank You'
     document.getElementById('family-h3').style.color = 'Teal'
-    emailjs.sendForm('service_2201c2n', "template_abtq1im", e.target, 'user_7oFNkpAKDIKus9MJJpUuF')
+    emailjs.sendForm('service_2201c2n', "template_a70c99a", e.target, 'user_7oFNkpAKDIKus9MJJpUuF')
         .then((result) => {
             console.log("result text", result.text);
 

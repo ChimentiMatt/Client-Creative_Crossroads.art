@@ -14,7 +14,7 @@ export default function AboutPage() {
         <div className="container-home">
 
             <div className="container-about-img">
-                <img src={centerpieceImg} alt="test" />
+                <img id="about-img" src={centerpieceImg} alt="test" />
             </div>
             <div className="container-about-text">
                 <p className="about-heading-text">

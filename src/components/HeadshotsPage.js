@@ -20,12 +20,12 @@ export default function Headshots(props) {
 function GalleryHeadshots() {
   const images = [
     {
-      original: `${dustin1}`,
-      thumbnail: `${dustin1}`,
-    },
-    {
       original: `${grif1}`,
       thumbnail: `${grif1}`,
+    },
+    {
+      original: `${dustin1}`,
+      thumbnail: `${dustin1}`,
     },
     {
       original: `${june1}`,

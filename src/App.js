@@ -10,8 +10,10 @@ import WeddingPage from './components/WeddingsPage.js';
 import AboutPage from './components/AboutPage.js';
 import FamilyPortraitPage from './components/FamilyPortraitPage.js';
 import BottomBar from './components/BottomBar.js'
-import ContactPage from './components/contactPage.js'
+import ContactPage from './components/ContactPage.js'
 import HeadshotsPage from './components/HeadshotsPage.js'
+import MusicPage from './components/MusicPage.js'
+
 
 import PianoCamera from "./img-phot/camera-square.jpeg";
 import Logo from "./img-phot/Watermark.png";
@@ -144,7 +146,7 @@ class App extends React.Component {
                 </Route>
 
                 <Route exact path="/music">
-                  <ContactPage />
+                  <MusicPage />
                 </Route>
 
                 <Route exact path="/contact">
