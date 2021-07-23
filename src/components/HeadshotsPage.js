@@ -57,6 +57,8 @@ function FormHeadshots(params) {
     setDisabled(true)
     setBlock('block')
     setHidden('none')
+    document.getElementById('headshots-h3').innerHTML = 'Thank you'
+    document.getElementById('headshots-h3').style.color = 'teal'
     emailjs.sendForm('service_2201c2n', "template_xitg4tf", e.target, 'user_7oFNkpAKDIKus9MJJpUuF')
       .then((result) => {
         console.log("result text", result.text);
@@ -78,13 +80,13 @@ function FormHeadshots(params) {
         <p>Want to book for Photos or Music?</p>
         <p>Have any specific requests or questions?</p>
         <p>Email: sfchim@msn.com</p>
-
+        <div className="line"></div>  
       </div>
       <div className='sent-message'>
-      <div style={{display: visibility}} className="line"></div>
-                <h3 style={{display: visibility, color: 'teal'}}>Thank you </h3>
-                <p style={{display: visibility}}>You will recieve a call within 24 Hours</p>
-                <p style={{display: visibility}}>Suzanne Chimenti</p>
+
+              <h3 id="headshots-h3">Contact Me </h3>
+              <p style={{display: visibility}}>You will recieve a call within 24 Hours</p>
+              <p style={{display: visibility}}>Suzanne Chimenti</p>
       </div>
 
       <div className="container-contact-form">

@@ -7,10 +7,10 @@ import vicky1 from '../img-wedding/vicky1.jpg'
 import vicky2 from '../img-wedding/vicky5.jpg'
 import rings from '../img-wedding/rings1.jpg'
 import forest from '../img-wedding/forest2.jpeg'
-import drone from '../img-wedding/drone1.jpg'
+
 import maids from '../img-wedding/maids3.jpeg'
 import men from '../img-wedding/men1.jpg'
-import nightVicky from '../img-wedding/vicky3.jpg'
+
 import party from '../img-wedding/party1.jpg'
 import car from '../img-wedding/car.jpg'
 import legs from '../img-wedding/legs.jpeg'
@@ -112,6 +112,8 @@ function FormWedding(params) {
         setDisabled(true)
         setBlock('block')
         setHidden('none')
+        document.getElementById('wedding-h3').innerHTML = 'Thank You'
+        document.getElementById('wedding-h3').style.color = 'teal'
         emailjs.sendForm('service_2201c2n', "template_abtq1im", e.target, 'user_7oFNkpAKDIKus9MJJpUuF')
             .then((result) => {
                 console.log("result text", result.text);
@@ -133,10 +135,10 @@ function FormWedding(params) {
                 <p>Eamil me or fill out the form below</p>
                 <p>Email: sfchim@msn.com</p>
             </div>
-
+            <div className="line"></div>
             <div className='sent-message'>
-                <div style={{ display: visibility }} className="line"></div>
-                <h3 style={{ display: visibility, color: 'teal' }}>Thank you </h3>
+
+                <h3 id="wedding-h3">Contact Me</h3>
                 <p style={{ display: visibility }}>You will recieve a call within 24 Hours</p>
                 <p style={{ display: visibility }}>Suzanne Chimenti</p>
             </div>
@@ -163,9 +165,10 @@ function FormWedding(params) {
                             <input disabled={disabled} type="submit" class="form-btn" value="Submit" ></input>
                         </label>
                     </form>
+
                 </div>
-                {/* <img className="right-img" src={Glory} alt="test" /> */}
             </div>
+
         </>
     )
 }

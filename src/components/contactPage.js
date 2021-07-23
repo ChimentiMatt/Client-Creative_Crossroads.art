@@ -16,6 +16,8 @@ export default function ContactPage() {
         setDisabled(true)
         setBlock('block')
         setHidden('none')
+        document.getElementById('contact-h3').innerHTML = 'Thank You'
+        document.getElementById('contact-h3').style.color = 'Teal'
         emailjs.sendForm('service_2201c2n', "template_a70c99a", e.target, 'user_7oFNkpAKDIKus9MJJpUuF')
             .then((result) => {
                 console.log("result text", result.text);
@@ -38,12 +40,12 @@ export default function ContactPage() {
                 <p>Eamil me or fill out the form below</p>
                 <p>Email: sfchim@msn.com</p>
             </div>
-
+            <div className="line"></div>
 
 
             <div className='sent-message'>
-                <div style={{display: visibility}} className="line"></div>
-                <h3 style={{display: visibility}}>Thank you </h3>
+
+                <h3 id='contact-h3'>Contact Me </h3>
                 <p style={{display: visibility}}>You will recieve a call within 24 Hours</p>
                 <p style={{display: visibility}}>Suzanne Chimenti</p>
 
