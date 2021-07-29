@@ -387,8 +387,22 @@
   height: 25px;
 
 }
+/* Photography Page */
 
+#container-photog-about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+#container-photog-about h1{
+  text-align: center;
+}
+#container-photog-about p{
+  width: 1000px;
+  margin-top: 20px;
+  line-height: 1.8;
+}
 /* Contact Page */
 .container-contact-img{
   display: flex;
@@ -407,18 +421,36 @@
 }
 
 .container-contact-body{
+  align-items: center;
   text-align: center;
 }
 
-.container-contact-body h2{
+
+#container-music-about{
+  display: flex;
+
+  justify-content: center;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+#music-about-header{
+  text-align: center;
+}
+#music-about{
+  text-align: center;
+  margin-top: 20px;
+  width: 1000px;
+}
+
+.container-contact-body h1{
   letter-spacing: 4px;
-  font-size: 35px;
-  margin-bottom: 40px;
+
+  margin-bottom: 20px;
   /* color: #f0987d; */
 }
 
 .container-contact-body p{
-  margin-top: 10px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -443,7 +475,7 @@
   text-align: center;
   /* margin-top: 30px; */
   margin-bottom: 30px;
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 .sent-message p  {

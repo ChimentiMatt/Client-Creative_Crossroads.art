@@ -11,8 +11,8 @@ export default function PhotoInfo() {
         setDisabled(true)
         setBlock('block')
         setHidden('none')
-        document.getElementById('photo-h3').innerHTML = "Thank You"
-        document.getElementById('photo-h3').style.color = "teal"
+        document.getElementById('photo-h1').innerHTML = "Thank You"
+        document.getElementById('photo-h1').style.color = "teal"
         emailjs.sendForm('service_2201c2n', "template_yu30god", e.target, 'user_7oFNkpAKDIKus9MJJpUuF')
             .then((result) => {
                 console.log("result text", result.text);
@@ -31,7 +31,7 @@ export default function PhotoInfo() {
             <div className="line"></div>
 
             <div className="container-contact-body">
-                <h2>Purchase A Print</h2>
+                <h1>Purchase A Print</h1>
                 <p>Want to buy a print?</p>
                 <p>Have any specific requests or questions?</p>
                 <p>Email me or fill out the form below</p>
@@ -39,10 +39,29 @@ export default function PhotoInfo() {
             </div>
             <div className="line"></div>
 
+            <div id="container-photog-about">
+                <h1>About My Photography</h1>
+                <p>My desire to create also led me to the study of photography. I can often be found at the
+                    Columbia River Gorge, at Mt. Hood or at the Oregon Coast capturing sunrises and sunsets. I
+                    have recently turned my attention to photographing weddings and events.
+                    I have invested a considerable amount of money into state-of-the-art photographic equipment
+                    (currently shooting with a Nikon D850). My skills include sophisticated editing to make your
+                    photos as gorgeous as possible. I can also bring a drone to your event so that some of the
+                    photos will have that magical overhead angle.
+                    If you are interested in both music and photography I can bring along a second photographer
+                    that can cover for me while I play music. Let’s talk.
+                    Whether you need a musician or a photographer for your event, (or even a combination) I will
+                    bring my skills, a finely tuned work ethic and a sense of joy in doing what I love to make your
+                    day extra special.
+                </p>
+                </div>
+
+            <div className="line"></div>
+
             <div className='sent-message'>
 
 
-                <h3 id="photo-h3">Contact Me </h3>
+                <h1 id="photo-h1">Contact Me </h1>
                 <p style={{display: visibility}}>You will recieve a call within 24 Hours</p>
                 <p style={{display: visibility}}>Suzanne Chimenti</p>
             </div>

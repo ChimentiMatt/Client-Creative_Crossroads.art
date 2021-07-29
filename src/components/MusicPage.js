@@ -12,8 +12,8 @@ export default function MusicPage() {
         setDisabled(true)
         setBlock('block')
         setHidden('none')
-        document.getElementById('music-h3').innerHTML = 'Thank You'
-        document.getElementById('music-h3').style.color = 'Teal'
+        document.getElementById('music-h1').innerHTML = 'Thank You'
+        document.getElementById('music-h1').style.color = 'Teal'
         emailjs.sendForm('service_2201c2n', "template_a70c99a", e.target, 'user_7oFNkpAKDIKus9MJJpUuF')
             .then((result) => {
                 console.log("result text", result.text);
@@ -30,18 +30,41 @@ export default function MusicPage() {
             <img id="music-img" src={centerpieceImg} alt="test" />
             </div>
             <div className="container-contact-body">
-                <h2>Contact</h2>
+
+                <h1>Music</h1>
                 <p>Want to book for Photos or Music?</p>
                 <p>Have any specific requests or questions?</p>
                 <p>Eamil me or fill out the form below</p>
                 <p>Email: sfchim@msn.com</p>
             </div>
+                <div className="line"></div>
+                    <h1 id="music-about-header">About My Musical Career</h1>
+                <div id="container-music-about">
+
+                    <p id="music-about">Growing up in Milwaukie, Oregon, I was a reluctant and rebellious piano student of my piano
+                        teacher mother. Her will proved to be stronger than mine and the music eventually won me
+                        over and I feel deeply in love with most things artistic. I majored in voice in college and
+                        continued my piano studies and became a choir teacher for Reynolds School District (currently
+                        teaching at Walt Morey Middle School). Along my musical journey I also picked up violin (I am
+                        current president of Willamette Falls Symphony), guitar, banjo and ukulele. I have been
+                        selected to play Rhapsody in Blue by George Gershwin with Willamette Falls Symphony in
+                        March of 2021.
+                        My services for your event include your choice of music. I am experienced at classical and jazz
+                        repertoire and can play most any music that we can find music to. I bring a professional
+                        keyboard in a grand piano case to your event, making it look as well as sound classy. I also have
+                        professional sound equipment that can be included in the package so if you need a sound
+                        system to play music for dancing, or a cordless microphone for announcements, I am happy to
+                        provide that. I also have many musician friends so if you would like another instrument to be
+                        featured I can locate and hire those musicians for you.
+                                        </p>
+                </div>
+     
             <div className="line"></div>
 
 
             <div className='sent-message'>
 
-                <h3 id='music-h3'>Contact Me </h3>
+                <h1 id='music-h1'>Contact Me </h1>
                 <p style={{display: visibility}}>You will recieve a call within 24 Hours</p>
                 <p style={{display: visibility}}>Suzanne Chimenti</p>
 
