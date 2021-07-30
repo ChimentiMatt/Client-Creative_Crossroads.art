@@ -45,9 +45,6 @@ class App extends React.Component {
       activeLink: false
     };
   } 
-
-
-
   render() {
 
     return (
@@ -55,12 +52,14 @@ class App extends React.Component {
       // Uess a Ternary webpage to landing page on first render 
       this.state.intro ?
         <div className="intro-page">
-          <div className="container-intro-texts">
+          <div id="container-intro-texts">
 
             <h1 className="intro-h1" ></h1>
      
             <Router>
-            <NavLink onClick={() =>{  this.setState({ intro: false })}} className="intro-h1" to="/about">CREATIVE CROSSROADS</NavLink>
+              <div id="container-landing-title">
+              <NavLink onClick={() =>{  this.setState({ intro: false })}} id="intro-h1" to="/about">CREATIVE CROSSROADS</NavLink>
+            </div>
             <img className="watermark" src={Logo5} ></img>
 
             <div className="container-rows">
@@ -171,7 +170,6 @@ class App extends React.Component {
 }
 function Animation() {
   console.log('test')
-
 }
 
 

@@ -25,7 +25,7 @@
   z-index: -1;
 }
 
-.container-intro-texts{
+#container-intro-texts{
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -39,7 +39,7 @@
 
 }
 
-.intro-h1{
+#intro-h1{
   display: flex;
   justify-content: center;
   width: 100%;
@@ -58,7 +58,8 @@
 .intro-links:hover{
   opacity: 1;
    font-weight: 700; 
-   color: red;
+   color: black;
+   opacity: 1;
 }
 
 .watermark{
@@ -221,7 +222,9 @@
 }
 
 .links:hover{
-  color: red;
+  color: black;
+  /* text-shadow: 1px 1px black; */
+  opacity: 1;
   font-weight: 700;
 }
 
@@ -229,7 +232,6 @@
   font-weight: 700;
 
 }
-
 
 .form-field{
   text-align: center;
@@ -246,6 +248,22 @@
   height: 50px;
   border-top: 1px solid rgba(0, 0, 0, .3);
   margin-top: 50px;
+}
+
+/* Universe Contact Section in pages */
+.container-contact-body{
+  align-items: center;
+  text-align: center;
+}
+.container-contact-body h1{
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+.container-contact-body p{
+  margin-bottom: 10px;
+  font-size: 22px;
+  text-align: center;
 }
 
 
@@ -305,9 +323,20 @@
   margin-top: 25px;
 }
 .familyContent{
-  
 }
 
+#family-about-header{
+  text-align: center;
+  margin-bottom: 20px;
+}
+#container-family-about{
+  display: flex;
+  justify-content: center;
+}
+#family-about{
+  font-size: 22px;
+  line-height: 1.8;
+}
 
 /* Photography Page - Gallery  ----------------------------------------*/
 
@@ -338,6 +367,7 @@
   width: 1000px;
   margin-top: 20px;
   line-height: 1.8;
+  font-size: 22px;
 }
 
 
@@ -358,11 +388,6 @@
   margin-bottom: 50px;
 }
 
-.container-contact-body{
-  align-items: center;
-  text-align: center;
-}
-
 
 #container-music-about{
   display: flex;
@@ -380,15 +405,6 @@
   width: 1000px;
 }
 
-.container-contact-body h1{
-  letter-spacing: 4px;
-  margin-bottom: 20px;
-}
-
-.container-contact-body p{
-  margin-bottom: 10px;
-  text-align: center;
-}
 
 
 /* Universal  Contact  Form ------------------------------------*/
@@ -405,14 +421,15 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   margin-top: 25px;
 }
 
 
 .sent-message p  {
-  padding-bottom: 5px;
-
+  padding-bottom: 20px;
+  font-size: 22px;
+  font-weight: bold;
 }
 .sent-message h1 {
   margin-bottom: 20px;
@@ -432,6 +449,8 @@
 
 .inner-container-contact-form{
   width: 500px;
+  margin-top: 40px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -482,6 +501,40 @@
   margin-top: 50px;
 }
 
+#headshots-about-header{
+  text-align: center;
+  margin-bottom: 20px;
+}
+#container-headshots-about{
+  display: flex;
+  font-size: 22px;
+  justify-content: center;
+}
+#headshots-about{
+  text-align: center;
+  margin-top: 20px;
+  width: 1000px;
+  line-height: 1.8;
+}
+
+
+
+/* Wedding Page  --------------------------------------*/
+#weddings-about-header{
+  text-align: center;
+}
+#container-weddings-about{
+  display: flex;
+  font-size: 22px;
+  justify-content: center;
+}
+#weddings-about{
+  text-align: center;
+  margin-top: 20px;
+  width: 1000px;
+  line-height: 1.8;
+}
+
 
 /* Footer */
 .footer {
@@ -496,7 +549,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   font-size: 15px;
-  margin-top: 50px;
+  margin-top: 100px;
   align-items: center;
   letter-spacing: 2px;
 }
@@ -506,28 +559,130 @@
 }
 
 
-@media (max-width: 1000px) {
+
+
+
+@media (max-width: 1400px) {
   .intro-page{
     max-height: 100vh;
     max-width: 300px;
-
   }
-
   .intro-page-img{
     top: -150px;
     width: 100vw;
   }
-  .container-intro-texts{
+  #container-intro-texts{
+    justify-content: center;
+
+    width: 100vw;
+    left: 0;
+    top: 355px;
+  }
+  #container-landing-title{
+    margin-right: 50px;
+  }
+  #intro-h1{
+    color: wheat;
+    text-shadow: 2px 2px 2px black;
+    text-align: end;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    font-size: 45px;
+    /* text-shadow: 2px 2px 2px black; */
+  }
+  #intro-h1:hover{
+    color: white;
+  }
+
+  .watermark{
+    display: none;
+  }
+  .intro-links{
+    display: none;
+  }
+
+  .row0-buttons{
+    display: none;
+  }
+
+}
+
+
+@media (max-width: 1180px) {
+  .intro-page{
+    max-height: 100vh;
+    max-width: 300px;
+  }
+  .intro-page-img{
+    top: -150px;
+    width: 100vw;
+  }
+  #container-intro-texts{
     justify-content: center;
     width: 100vw;
     left: 0;
-
     top: 355px;
   }
-  .intro-h1{
-    color: white;
-    font-size: 35px;
+  #container-landing-title{
+    margin-right: 0px;
   }
+
+  #intro-h1{
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    justify-content: center;
+    text-shadow: 2px 2px 2px black;
+  }
+  #intro-h1:hover{
+    color: white;
+  }
+
+  .watermark{
+    display: none;
+  }
+  .intro-links{
+    display: none;
+  }
+  .row0-buttons{
+    display: none;
+  }
+}
+
+
+
+
+@media (max-width: 1000px) {
+  .intro-page{
+    max-height: 100vh;
+    max-width: 300px;
+  }
+  .intro-page-img{
+    top: -150px;
+    width: 100vw;
+  }
+  #container-intro-texts{
+    justify-content: center;
+    width: 100vw;
+    left: 0;
+    top: 355px;
+  }
+  #container-landing-title{
+    margin-right: 0px;
+  }
+
+  #intro-h1{
+    color: white;
+    font-size: 45px;
+    justify-content: center;
+    text-shadow: 2px 2px 2px black;
+  }
+
+  #intro-h1:hover{
+    color: white;
+  }
+
   .watermark{
     display: none;
   }
@@ -544,14 +699,16 @@
     margin-top: 10px;
     font-size: 35px;
   }
+
   .header-watermark{
     height: 50px;
   }
+
   .about-contact{
     font-size: 15px;
-
     margin-bottom: 10px;
   }
+
   .container-a-tag{
     font-size: 15px;
   }
@@ -568,7 +725,6 @@
   .container-home{
     width: 100vw;
   }
-
   
   .container-about-img{
     object-fit: contain;
@@ -590,14 +746,19 @@
     word-wrap: break-word;
     border-bottom: 1px solid black;
   }
+  .about-heading-text{
+    margin-top: 30px;
+    font-size: 30px;
+  }
   .about-text{
     display: flex;
     justify-content: center;
+    font-size: 16px;
     text-align: center;
     margin-left: 100px;
     margin-right: 100px;
     margin-top: 10px;
-    width: 100vw;
+    width: 90vw;
   }
 
   /* photography page */
@@ -614,21 +775,73 @@
   .container-slide{
     width: 90vw;
   }
+  #weddings-about-header{
+    font-size: 30px;
+    width: 90vw;
+    margin-left: 5vw;
+
+  }
+  #weddings-about{
+    width: 90vw;
+    font-size: 16px;
+  }
+  /* Headshots Page */
+  #headshots-about-header{
+    font-size: 30px;
+  }
+  #container-headshots-about{
+    font-size: 16px;
+  }
 
   /* Family Page */
   .family-about{
     width: 90vw;
   }
+  #family-about-header{
+    font-size: 30px;
+  }
+  #family-about{
+    width: 90vw;
+    font-size: 16px;
+  }
+
   /* Contact Page */
   #contact-img{
     width: 100vw;
     position: relative;
+  }
+  .container-contact-body h1{
+    font-size: 30px;
+  }
+  .container-contact-body p{
+    font-size: 16px;
+  }
+  #container-photog-about h1{
+    font-size: 30px;
+  }
+  #container-photog-about p{
+    font-size: 17px;
   }
   /* Music Page */
   #music-about{
     width: 90vw;
   }
 
+  #music-about-header{
+    font-size: 30px;
+  }
+  #music-about{
+    font-size: 16px;
+  }
+
+  /* Universal Sent Message Form */
+  .sent-message h1{
+    font-size: 30px;
+  }
+  .sent-message p{
+    font-weight: bold;
+
+  }
   /* Footer */
   .footer-text{
     font-size: 10px;

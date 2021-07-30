@@ -115,8 +115,8 @@ function FormWedding(params) {
         setDisabled(true)
         setBlock('block')
         setHidden('none')
-        document.getElementById('wedding-h3').innerHTML = 'Thank You'
-        document.getElementById('wedding-h3').style.color = 'teal'
+        document.getElementById('wedding-h1').innerHTML = 'Thank You'
+        document.getElementById('wedding-h1').style.color = 'teal'
         emailjs.sendForm('service_2201c2n', "template_abtq1im", e.target, 'user_7oFNkpAKDIKus9MJJpUuF')
             .then((result) => {
                 console.log("result text", result.text);
@@ -132,16 +132,26 @@ function FormWedding(params) {
         <>
             <div className="line"></div>
             <div className="container-contact-body">
-                <h2>Book For Your Wedding</h2>
+                <h1>Book For Your Wedding</h1>
                 <p>Want to book for your Wedding and events?</p>
                 <p>Have any specific requests or questions?</p>
                 <p>Eamil me or fill out the form below</p>
                 <p>sfchim@msn.com</p>
             </div>
             <div className="line"></div>
-            <div className='sent-message'>
+                <h1 id="weddings-about-header">About How I Photography Your Wedding</h1>
+                <div id="container-weddings-about">
+                <p id="weddings-about">It’s your day and I want the shots to be a wonderful memory for you.  Before the wedding we will talk about your needs and I will do my best to make you 100% happy.  
 
-                <h3 id="wedding-h3">Contact Me</h3>
+                    I believe that every photo is important.  I photograph everyone involved including the wedding party and the guests.  My goal is to have always made a plan with my client so that when the day comes, it is something that can just take off their plate and not worry about.  Turn it over to me so you can enjoy your day. As a bonus, I bring my drone so you can have that movie star effect of overhead shots. I use state-of-the art equipment for both taking the photos and for processing afterwards.  I can easily remove blemishes, soften skin, and even take away pounds.  I want you to feel and look your absolute best.
+
+                    If you choose, I can hire an extra photographer for part of the day.  I can use that person to shoot the actual wedding while I provide music. If I haul out my piano for the event, you can use my Bose Sound System and cordless microphone for your wedding.  Make a play list and hook it up to the sound system through your phone and you can have beautiful music for the reception and save money on a DJ.  Let’s talk...</p>
+                </div>
+            <div className="line"></div>
+
+
+            <div className='sent-message'>
+                <h1>Contact Me</h1>
                 <p style={{ display: visibility }}>You will recieve a call within 24 Hours</p>
                 <p style={{ display: visibility }}>Suzanne Chimenti</p>
             </div>

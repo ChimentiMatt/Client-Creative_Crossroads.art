@@ -68,7 +68,7 @@ export default function MusicPage() {
 
             <div className='sent-message'>
 
-                <h1 id='music-h1'>Contact Me </h1>
+                <h1>Contact Me </h1>
                 <p style={{display: visibility}}>You will recieve a call within 24 Hours</p>
                 <p style={{display: visibility}}>Suzanne Chimenti</p>
 

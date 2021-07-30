@@ -63,9 +63,7 @@ export default function PhotoInfo() {
             <div className="line"></div>
 
             <div className='sent-message'>
-
-
-                <h1 id="photo-h1">Contact Me </h1>
+                <h1>Contact Me </h1>
                 <p style={{display: visibility}}>You will recieve a call within 24 Hours</p>
                 <p style={{display: visibility}}>Suzanne Chimenti</p>
             </div>

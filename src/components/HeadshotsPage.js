@@ -60,8 +60,8 @@ function FormHeadshots(params) {
     setDisabled(true)
     setBlock('block')
     setHidden('none')
-    document.getElementById('headshots-h3').innerHTML = 'Thank you'
-    document.getElementById('headshots-h3').style.color = 'teal'
+    document.getElementById('headshots-h1').innerHTML = 'Thank you'
+    document.getElementById('headshots-h1').style.color = 'teal'
     emailjs.sendForm('service_2201c2n', "template_xitg4tf", e.target, 'user_7oFNkpAKDIKus9MJJpUuF')
       .then((result) => {
         console.log("result text", result.text);
@@ -79,16 +79,24 @@ function FormHeadshots(params) {
       <div className="line"></div>
 
       <div className="container-contact-body">
-        <h2>Headshots</h2>
+        <h1>Headshots</h1>
         <p>Want to book for headshots?</p>
         <p>Have any specific requests or questions?</p>
         <p>Eamil me or fill out the form below</p>
         <p>sfchim@msn.com</p>
         <div className="line"></div>  
       </div>
+
+
+      <h1 id="headshots-about-header">About How I Take Your Headshots</h1>
+                <div id="container-headshots-about">
+                <p id="headshots-about">I have a home photography studio.  If you want formal photos I can either have you come to my home in Damascus, Oregon or I can bring my equipment to you.  For natural lighting, we can meet at your favorite park or whatever setting you would most enjoy.  It’s all about. You and I want you to be comfortable.</p>
+              
+                </div>
+                <div className="line"></div>  
       <div className='sent-message'>
 
-              <h3 id="headshots-h3">Contact Me </h3>
+              <h1>Contact Me </h1>
               <p style={{display: visibility}}>You will recieve a call within 24 Hours</p>
               <p style={{display: visibility}}>Suzanne Chimenti</p>
       </div>

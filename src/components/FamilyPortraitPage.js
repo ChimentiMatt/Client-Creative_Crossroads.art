@@ -76,8 +76,8 @@ function FamilyContent() {
     setDisabled(true)
     setBlock('block')
     setHidden('none')
-    document.getElementById('family-h3').innerHTML = 'Thank You'
-    document.getElementById('family-h3').style.color = 'Teal'
+    document.getElementById('family-h1').innerHTML = 'Thank You'
+    document.getElementById('family-h1').style.color = 'Teal'
     emailjs.sendForm('service_2201c2n', "template_a70c99a", e.target, 'user_7oFNkpAKDIKus9MJJpUuF')
         .then((result) => {
             console.log("result text", result.text);
@@ -92,17 +92,26 @@ function FamilyContent() {
         
             <div className="line"></div>
             <div className="container-contact-body">
-                <h2>Book Your Family</h2>
+                <h1>Book Your Family</h1>
                 {/* <p>Want to book for your big day</p> */}
                 <p>Have any specific requests or questions?</p>
                 <p>Eamil me or fill out the form below</p>
                 <p>sfchim@msn.com</p>
                 <div className="line"></div>
             </div>
+            <h1 id="family-about-header">About How I Photography Your Family</h1>
+                <div id="container-family-about">
+                <p id="family-about">Dummy text
+                    </p>
+              
+                </div>
+
+
+            <div className="line"></div>
 
             <div className='sent-message'>
 
-                <h3 id="family-h3">Contact Me </h3>
+                <h1>Contact Me </h1>
                 <p style={{ display: visibility }}>You will recieve a call within 24 Hours</p>
                 <p style={{ display: visibility }}>Suzanne Chimenti</p>
             </div>

@@ -20,8 +20,9 @@ export default function ContactPage() {
         setDisabled(true)
         setBlock('block')
         setHidden('none')
-        document.getElementById('contact-h3').innerHTML = 'Thank You'
-        document.getElementById('contact-h3').style.color = 'Teal'
+        document.getElementById('contact-h1').innerHTML = 'Thank You'
+        document.getElementById('contact-h1').style.color = 'Teal'
+
         emailjs.sendForm('service_2201c2n', "template_a70c99a", e.target, 'user_7oFNkpAKDIKus9MJJpUuF')
             .then((result) => {
                 console.log("result text", result.text);
@@ -38,7 +39,7 @@ export default function ContactPage() {
                 <img id="contact-img" src={Lake}></img>
             </div>
             <div className="container-contact-body">
-                <h2>Contact</h2>
+                <h1>Contact</h1>
                 <p>Want to book for Photos or Music?</p>
                 <p>Have any specific requests or questions?</p>
                 <p>Eamil me or fill out the form below</p>
@@ -49,7 +50,7 @@ export default function ContactPage() {
 
             <div className='sent-message'>
 
-                <h3 id='contact-h3'>Contact Me </h3>
+                <h1 id='contact-h1'>Contact Me </h1>
                 <p style={{display: visibility}}>You will recieve a call within 24 Hours</p>
                 <p style={{display: visibility}}>Suzanne Chimenti</p>
 
