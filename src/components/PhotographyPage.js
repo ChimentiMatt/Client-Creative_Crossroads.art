@@ -181,7 +181,7 @@ const BasicRows = () =>
 <Gallery 
     id='1' 
     photos={photos} 
-    onClick={logFun}
+    // onClick={logFun}
 />
 
 export default BasicRows

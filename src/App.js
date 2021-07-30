@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css';
-
+import { gsap } from "gsap"
 import { render } from "react-dom";
 import { NavLink } from 'react-router-dom';
 
@@ -30,10 +30,12 @@ import {
   useRouteMatch,
   useParams
 } from "react-router-dom";
+import gsapCore from 'gsap/gsap-core';
 
 
 
 class App extends React.Component {
+
   constructor(props) {
     super(props);
     this.state = {
@@ -42,7 +44,8 @@ class App extends React.Component {
       // cat: 'kittens',
       activeLink: false
     };
-  }
+  } 
+
 
 
   render() {
@@ -57,7 +60,7 @@ class App extends React.Component {
             <h1 className="intro-h1" ></h1>
      
             <Router>
-            <NavLink onClick={() => this.setState({ intro: false })} className="intro-h1" to="/about">CREATIVE CROSSROADS</NavLink>
+            <NavLink onClick={() =>{  this.setState({ intro: false })}} className="intro-h1" to="/about">CREATIVE CROSSROADS</NavLink>
             <img className="watermark" src={Logo5} ></img>
 
             <div className="container-rows">
@@ -166,7 +169,10 @@ class App extends React.Component {
     );
   }
 }
+function Animation() {
+  console.log('test')
 
+}
 
 
 // export default function LandingPage() {

@@ -41,7 +41,7 @@ export default function PhotoInfo() {
 
             <div id="container-photog-about">
                 <h1>About My Photography</h1>
-                <p>My desire to create also led me to the study of photography. I can often be found at the
+                <p>My desire to create led me to the study of photography. I can often be found at the
                     Columbia River Gorge, at Mt. Hood or at the Oregon Coast capturing sunrises and sunsets. I
                     have recently turned my attention to photographing weddings and events.
                     I have invested a considerable amount of money into state-of-the-art photographic equipment
