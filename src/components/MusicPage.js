@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import emailjs from 'emailjs-com';
 import centerpieceImg from "../img-phot/suzanne-cropped.jpg"
 
@@ -6,6 +6,10 @@ export default function MusicPage() {
     const [disabled, setDisabled] = useState(false);
     const [visibility, setBlock] = useState('none')
     const [hide, setHidden] = useState('visible')
+
+    useEffect(() => {
+        document.title = 'Music'
+    })
 
     function sendEmail(e) {
         e.preventDefault();
@@ -32,10 +36,10 @@ export default function MusicPage() {
             <div className="container-contact-body">
 
                 <h1>Music</h1>
-                <p>Want to book for Photos or Music?</p>
+                <p>Want to book Suzanne as a musician?</p>
                 <p>Have any specific requests or questions?</p>
                 <p>Eamil me or fill out the form below</p>
-                <p>Email: sfchim@msn.com</p>
+                <p>sfchim@msn.com</p>
             </div>
                 <div className="line"></div>
                     <h1 id="music-about-header">About My Musical Career</h1>

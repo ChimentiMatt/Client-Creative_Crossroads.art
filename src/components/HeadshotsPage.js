@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 import ImageGallery from 'react-image-gallery';
 
@@ -9,6 +9,9 @@ import june1 from '../img-headshots/June.jpeg'
 import juneHus from '../img-headshots/junehus.jpeg'
 
 export default function Headshots(props) {
+  useEffect(() => {
+    document.title = 'Headshots'
+})
   return (
     <div >
       <GalleryHeadshots />
@@ -77,9 +80,10 @@ function FormHeadshots(params) {
 
       <div className="container-contact-body">
         <h2>Headshots</h2>
-        <p>Want to book for Photos or Music?</p>
+        <p>Want to book for headshots?</p>
         <p>Have any specific requests or questions?</p>
-        <p>Email: sfchim@msn.com</p>
+        <p>Eamil me or fill out the form below</p>
+        <p>sfchim@msn.com</p>
         <div className="line"></div>  
       </div>
       <div className='sent-message'>

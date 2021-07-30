@@ -1,10 +1,14 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import emailjs from 'emailjs-com';
 
 export default function PhotoInfo() {
     const [disabled, setDisabled] = useState(false);
     const [visibility, setBlock] = useState('none')
     const [hide, setHidden] = useState('visible')
+
+    useEffect(() => {
+        document.title = 'Photography'
+    })
 
     function sendEmail(e) {
         e.preventDefault();
@@ -35,7 +39,7 @@ export default function PhotoInfo() {
                 <p>Want to buy a print?</p>
                 <p>Have any specific requests or questions?</p>
                 <p>Email me or fill out the form below</p>
-                <p>Email: sfchim@msn.com</p>
+                <p>sfchim@msn.com</p>
             </div>
             <div className="line"></div>
 

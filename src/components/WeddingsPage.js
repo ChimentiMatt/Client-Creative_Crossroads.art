@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 
 import ImageGallery from 'react-image-gallery';
@@ -29,6 +29,9 @@ import {
 
 
 export default function WeddingPage() {
+    useEffect(() => {
+        document.title = 'Weddings'
+    })
     return (
         <div className="family-page">
             <WeddingGallery />
@@ -130,10 +133,10 @@ function FormWedding(params) {
             <div className="line"></div>
             <div className="container-contact-body">
                 <h2>Book For Your Wedding</h2>
-                <p>Want to book for your big day</p>
+                <p>Want to book for your Wedding and events?</p>
                 <p>Have any specific requests or questions?</p>
                 <p>Eamil me or fill out the form below</p>
-                <p>Email: sfchim@msn.com</p>
+                <p>sfchim@msn.com</p>
             </div>
             <div className="line"></div>
             <div className='sent-message'>

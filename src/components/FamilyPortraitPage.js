@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ImageGallery from 'react-image-gallery';
 import emailjs from 'emailjs-com';
 
@@ -21,6 +21,9 @@ import {
 } from "react-router-dom";
 
 export default function FamilyPortraitPage(props) {
+  useEffect(() => {
+    document.title = 'Family'
+})
   return (
     <div className="family-page">
       <FamilyGallery />
@@ -93,7 +96,7 @@ function FamilyContent() {
                 {/* <p>Want to book for your big day</p> */}
                 <p>Have any specific requests or questions?</p>
                 <p>Eamil me or fill out the form below</p>
-                <p>Email: sfchim@msn.com</p>
+                <p>sfchim@msn.com</p>
                 <div className="line"></div>
             </div>
 

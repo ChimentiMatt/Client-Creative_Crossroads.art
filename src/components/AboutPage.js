@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import centerpieceImg from "../img-phot/suzanne-cropped.jpg"
 import {
     BrowserRouter as Router,
@@ -10,6 +10,9 @@ import {
 } from "react-router-dom";
 
 export default function AboutPage() {
+    useEffect(() => {
+        document.title = 'About'
+    })
     return (
         <div className="container-home">
 

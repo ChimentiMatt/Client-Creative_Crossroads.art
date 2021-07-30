@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 
 import Lake from "../img-phot/worlds2.jpg"
@@ -10,6 +10,10 @@ export default function ContactPage() {
     const [disabled, setDisabled] = useState(false);
     const [visibility, setBlock] = useState('none')
     const [hide, setHidden] = useState('visible')
+
+    useEffect(() => {
+        document.title = 'Contact'
+    })
 
     function sendEmail(e) {
         e.preventDefault();
@@ -38,7 +42,7 @@ export default function ContactPage() {
                 <p>Want to book for Photos or Music?</p>
                 <p>Have any specific requests or questions?</p>
                 <p>Eamil me or fill out the form below</p>
-                <p>Email: sfchim@msn.com</p>
+                <p>sfchim@msn.com</p>
             </div>
             <div className="line"></div>
 
