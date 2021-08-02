@@ -5,6 +5,11 @@ import Lake from "../img-phot/worlds2.jpg"
 import LakeCropped from "../img-phot/worlds2.jpg"
 import Lake2 from "../img-phot/two-worlds.jpeg"
 
+import ReactDOM from 'react-dom'
+import { IconContext } from "react-icons";
+import { FaInstagram } from "react-icons/fa";
+
+
 
 export default function ContactPage() {
     const [disabled, setDisabled] = useState(false);
@@ -32,7 +37,6 @@ export default function ContactPage() {
                 
             });
     }
-
     return (
         <div >
             <div className="container-contact-img">
@@ -44,6 +48,15 @@ export default function ContactPage() {
                 <p>Have any specific requests or questions?</p>
                 <p>Eamil me or fill out the form below</p>
                 <p>sfchim@msn.com</p>
+                <p id="ContainerInstagramIcon" onClick={()=> window.open("https://www.instagram.com/suzannechim/", "_blank")}>
+                    <IconContext.Provider value={{ size: "2em", hover: "red"}}>
+                        <div id="instagramIcon">
+                            <FaInstagram/>
+                        </div>
+                    </IconContext.Provider>
+                </p>
+    
+
             </div>
             <div className="line"></div>
 

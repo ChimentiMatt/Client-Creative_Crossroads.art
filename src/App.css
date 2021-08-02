@@ -259,13 +259,26 @@
   letter-spacing: 4px;
   margin-bottom: 20px;
 }
-
 .container-contact-body p{
   margin-bottom: 10px;
   font-size: 22px;
   text-align: center;
 }
+#ContainerInstagramIcon{
+  display: flex;
+  justify-content: center;
 
+}
+#instagramIcon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+}
+
+#instagramIcon:hover{
+  color: #0085b6;
+}
 
 /* About --------------------------------------------------------------- */
 .container-about-img img{
@@ -336,7 +349,7 @@
 #family-about{
   font-size: 22px;
   line-height: 1.8;
-  width: 100px;
+  width: 1000px;
 }
 
 /* Photography Page - Gallery  ----------------------------------------*/
@@ -842,7 +855,6 @@
   }
   .sent-message p{
     font-weight: bold;
-
   }
   /* Footer */
   .footer-text{
