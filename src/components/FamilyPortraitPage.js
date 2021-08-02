@@ -101,7 +101,8 @@ function FamilyContent() {
             </div>
             <h1 id="family-about-header">About How I Photography Your Family</h1>
                 <div id="container-family-about">
-                <p id="family-about">Dummy text
+                <p id="family-about">When you have family photos taken, you create memories for both yourself and for future generations. I especially love photographing kids. It reminds me of all of those years of teaching music in public schools. 
+Together we can choose a location that is especially meaningful to you.  Contact me and let’s talk about it.
                     </p>
               
                 </div>

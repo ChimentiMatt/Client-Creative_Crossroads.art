@@ -58,7 +58,7 @@
 .intro-links:hover{
   opacity: 1;
    font-weight: 700; 
-   color: black;
+   color: #0085b6;
    opacity: 1;
 }
 
@@ -222,7 +222,7 @@
 }
 
 .links:hover{
-  color: black;
+  color: #0085b6;
   /* text-shadow: 1px 1px black; */
   opacity: 1;
   font-weight: 700;
@@ -336,6 +336,7 @@
 #family-about{
   font-size: 22px;
   line-height: 1.8;
+  width: 100px;
 }
 
 /* Photography Page - Gallery  ----------------------------------------*/
@@ -345,7 +346,7 @@
 }
 
 .photo:hover {
-  -webkit-filter: brightness(70%);
+  /* -webkit-filter: brightness(70%); */
 }
 
 .margin-top{
@@ -492,7 +493,8 @@
 }
 
 .form-btn:hover{
-  background-color: black;
+  /* background-color: black; */
+  background-color:#0085b6;
 }
 
 
