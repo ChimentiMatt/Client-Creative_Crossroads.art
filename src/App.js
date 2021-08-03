@@ -14,13 +14,6 @@ import ContactPage from './components/ContactPage.js'
 import HeadshotsPage from './components/HeadshotsPage.js'
 import MusicPage from './components/MusicPage.js'
 
-
-import PianoCamera from "./img-phot/camera-square.jpeg";
-import Logo from "./img-phot/Watermark.png";
-import LogoHeader from "./img-phot/Watermark-for-header.png";
-import Logo2 from "./img-phot/Watermark2.png";
-import Logo3 from "./img-phot/Watermark3.png";
-import Logo4 from "./img-phot/Watermark4.png";
 import Logo5 from "./img-phot/Watermark5.png";
 import {
   BrowserRouter as Router,
