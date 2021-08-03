@@ -9,8 +9,6 @@ import ReactDOM from 'react-dom'
 import { IconContext } from "react-icons";
 import { FaInstagram } from "react-icons/fa";
 
-
-
 export default function ContactPage() {
     const [disabled, setDisabled] = useState(false);
     const [visibility, setBlock] = useState('none')

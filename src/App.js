@@ -10,7 +10,7 @@ import WeddingPage from './components/WeddingsPage.js';
 import AboutPage from './components/AboutPage.js';
 import FamilyPortraitPage from './components/FamilyPortraitPage.js';
 import BottomBar from './components/BottomBar.js'
-import ContactPage from './components/ContactPage.js'
+import ContactPage from './components/ContactPage'
 import HeadshotsPage from './components/HeadshotsPage.js'
 import MusicPage from './components/MusicPage.js'
 
