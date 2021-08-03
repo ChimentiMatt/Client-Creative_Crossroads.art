@@ -10,7 +10,7 @@ import WeddingPage from './components/WeddingsPage.js';
 import AboutPage from './components/AboutPage.js';
 import FamilyPortraitPage from './components/FamilyPortraitPage.js';
 import BottomBar from './components/BottomBar.js'
-import ContactPage from './components/ContactPage'
+import ContactPages from './components/ContactPages'
 import HeadshotsPage from './components/HeadshotsPage.js'
 import MusicPage from './components/MusicPage.js'
 
@@ -145,7 +145,7 @@ class App extends React.Component {
                 </Route>
 
                 <Route exact path="/contact">
-                  <ContactPage />
+                  <ContactPages />
                 </Route>
 
 
