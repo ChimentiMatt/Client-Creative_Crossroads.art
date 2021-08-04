@@ -44,7 +44,7 @@ class App extends React.Component {
 
       // Uess a Ternary webpage to landing page on first render 
       this.state.intro ?
-        <div className="intro-page">
+        <div className="intro-page" onClick={() =>{  this.setState({ intro: false })}} >
           <div id="container-intro-texts">
 
             <h1 className="intro-h1" ></h1>

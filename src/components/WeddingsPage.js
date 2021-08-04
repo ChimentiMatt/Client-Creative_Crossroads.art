@@ -139,7 +139,7 @@ function FormWedding(params) {
                 <p>sfchim@msn.com</p>
             </div>
             <div className="line"></div>
-                <h1 id="weddings-about-header">About How I Photography Your Wedding</h1>
+                <h1 id="weddings-about-header">About How I Photograph Your Wedding</h1>
                 <div id="container-weddings-about">
                 <p id="weddings-about">It’s your day and I want the shots to be a wonderful memory for you.  Before the wedding we will talk about your needs and I will do my best to make you 100% happy.  
 
