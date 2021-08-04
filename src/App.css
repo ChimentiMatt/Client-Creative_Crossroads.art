@@ -692,10 +692,12 @@
     font-size: 45px;
     justify-content: center;
     text-shadow: 2px 2px 2px black;
+    margin-bottom: 50px;
   }
 
   #intro-h1:hover{
     color: white;
+
   }
 
   .watermark{
