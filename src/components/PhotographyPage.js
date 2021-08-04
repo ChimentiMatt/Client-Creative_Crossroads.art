@@ -23,7 +23,6 @@ import img19 from '../img-phot/salty-flight.jpeg';
 import img20 from '../img-phot/Sandy.jpeg';
 import img21 from '../img-phot/the-man.jpeg';
 import img22 from '../img-phot/two-worlds.jpeg';
-import img23 from '../img-phot/exodus.jpeg';
 
 
 const photos = [

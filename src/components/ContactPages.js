@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 
 import Lake from "../img-phot/worlds2.jpg"
-import LakeCropped from "../img-phot/worlds2.jpg"
-import Lake2 from "../img-phot/two-worlds.jpeg"
 
 import ReactDOM from 'react-dom'
 import { IconContext } from "react-icons";
