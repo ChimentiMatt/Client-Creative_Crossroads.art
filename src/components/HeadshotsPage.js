@@ -4,7 +4,7 @@ import ImageGallery from 'react-image-gallery';
 
 
 import dustin1 from '../img-headshots/dustin.jpeg'
-import grif1 from '../img-headshots/grif.jpeg'
+import grif2 from '../img-headshots/griff.jpeg'
 import june1 from '../img-headshots/June.jpeg'
 import juneHus from '../img-headshots/junehus.jpeg'
 
@@ -23,8 +23,8 @@ export default function Headshots(props) {
 function GalleryHeadshots() {
   const images = [
     {
-      original: `${grif1}`,
-      thumbnail: `${grif1}`,
+      original: `${grif2}`,
+      thumbnail: `${grif2}`,
     },
     {
       original: `${dustin1}`,
