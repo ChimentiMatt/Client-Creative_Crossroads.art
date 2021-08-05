@@ -20,7 +20,7 @@ export default function BottomBar() {
                         </div>
                     </IconContext.Provider>
                 </p>
-                    <p>ITHACA WEB DESIGN</p>
+                    <p>ODYSSEY WEB DESIGN</p>
                 </div>  
             </div>
         </div>
