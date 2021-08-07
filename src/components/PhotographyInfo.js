@@ -48,12 +48,16 @@ export default function PhotoInfo() {
                 <p>My desire to create led me to the study of photography. I can often be found at the
                     Columbia River Gorge, at Mt. Hood or at the Oregon Coast capturing sunrises and sunsets. I
                     have recently turned my attention to photographing weddings and events.
+                    <br></br><br></br>
                     I have invested a considerable amount of money into state-of-the-art photographic equipment
-                    (currently shooting with a Nikon D850). My skills include sophisticated editing to make your
+                    (currently shooting with a Nikon D850).
+                    My skills include sophisticated editing to make your
                     photos as gorgeous as possible. I can also bring a drone to your event so that some of the
                     photos will have that magical overhead angle.
+                    <br></br><br></br>
                     If you are interested in both music and photography I can bring along a second photographer
                     that can cover for me while I play music. Let’s talk.
+                    <br></br><br></br>
                     Whether you need a musician or a photographer for your event, (or even a combination) I will
                     bring my skills, a finely tuned work ethic and a sense of joy in doing what I love to make your
                     day extra special.

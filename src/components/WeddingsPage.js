@@ -141,11 +141,15 @@ function FormWedding(params) {
             <div className="line"></div>
                 <h1 id="weddings-about-header">About How I Photograph Your Wedding</h1>
                 <div id="container-weddings-about">
-                <p id="weddings-about">It’s your day and I want the shots to be a wonderful memory for you.  Before the wedding we will talk about your needs and I will do my best to make you 100% happy.  
+                <p id="weddings-about">It’s your day and I want the shots to be a wonderful memory for you. Before the wedding we will talk about your needs and I will do my best 
+                to make you 100% happy.  
 
-                    I believe that every photo is important.  I photograph everyone involved including the wedding party and the guests.  My goal is to have always made a plan with my client so that when the day comes, it is something that can just take off their plate and not worry about.  Turn it over to me so you can enjoy your day. As a bonus, I bring my drone so you can have that movie star effect of overhead shots. I use state-of-the art equipment for both taking the photos and for processing afterwards.  I can easily remove blemishes, soften skin, and even take away pounds.  I want you to feel and look your absolute best.
+                    I believe that every photo is important.  I photograph everyone involved including the wedding party and the guests.  My goal is to have always made a plan 
+                    with my client so that when the day comes, it is something that can just take off their plate and not worry about.  Turn it over to me so you can enjoy your day. 
+                    <br></br><br></br>
+                    I can also bring my drone so you can have that movie star effect of overhead shots. I use state-of-the art equipment for both taking the photos and for processing afterwards.  I can easily remove blemishes, soften skin, and even take away pounds.  I want you to feel and look your absolute best.
 
-                    If you choose, I can hire an extra photographer for part of the day.  I can use that person to shoot the actual wedding while I provide music. If I haul out my piano for the event, you can use my Bose Sound System and cordless microphone for your wedding.  Make a play list and hook it up to the sound system through your phone and you can have beautiful music for the reception and save money on a DJ.  Let’s talk...</p>
+                    If you choose, I can hire an extra photographer for part of the day.  I can use that person to shoot the actual wedding while I provide music. If I haul out my piano for the event, you can use my Bose Sound System and cordless microphone for your wedding.  Make a play list and hook it up to the sound system through your phone and you can have beautiful music for the reception and save money on a DJ.  Let’s talk.</p>
                 </div>
             <div className="line"></div>
 

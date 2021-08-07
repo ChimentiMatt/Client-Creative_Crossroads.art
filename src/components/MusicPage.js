@@ -53,6 +53,7 @@ export default function MusicPage() {
                         current president of Willamette Falls Symphony), guitar, banjo and ukulele. I have been
                         selected to play Rhapsody in Blue by George Gershwin with Willamette Falls Symphony in
                         March of 2021.
+                        <br></br><br></br>
                         My services for your event include your choice of music. I am experienced at classical and jazz
                         repertoire and can play most any music that we can find music to. I bring a professional
                         keyboard in a grand piano case to your event, making it look as well as sound classy. I also have
