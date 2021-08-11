@@ -51,32 +51,32 @@ class App extends React.Component {
      
             <Router>
               <div id="container-landing-title">
-              <NavLink onClick={() =>{  this.setState({ intro: false })}} id="intro-h1" to="/about">CREATIVE CROSSROADS</NavLink>
-            </div>
-            <img className="watermark" src={Logo5} ></img>
-
-            <div className="container-rows">
-  
-                <div className="row0-buttons">
-                  <NavLink onClick={() => this.setState({ intro: false })} className="intro-links" id="intro-about" to="/about">About</NavLink>
-                  <NavLink onClick={() => this.setState({ intro: false })} className="intro-links" id="intro-contact" to="/contact">Contact</NavLink>
+                  <NavLink onClick={() =>{  this.setState({ intro: false })}} id="intro-h1" to="/about">CREATIVE CROSSROADS</NavLink>
                 </div>
-    
-                <div className="row1-buttons">
-                  <NavLink onClick={() => this.setState({ intro: false })} className="intro-links" to="/photography">Photography</NavLink>
-                  
-                  <NavLink onClick={() => this.setState({ intro: false })} className="intro-links" to="/wedding">Weddings</NavLink>
+                <img className="watermark" src={Logo5} ></img>
 
-                  <NavLink onClick={() => this.setState({ intro: false })} className="intro-links" to="/headshots">Headshots</NavLink>
-                </div>
-                
-                <div className="row2-buttons">
-                  <NavLink onClick={() => this.setState({ intro: false })} className="intro-links" to="/familyportrait">Family Portraits</NavLink>
-
-                  <NavLink onClick={() => this.setState({ intro: false })} className="intro-links" to="/music">Musical Performances</NavLink>
-                </div>
+                <div className="container-rows">
+      
+                    <div className="row0-buttons">
+                      <NavLink onClick={() => this.setState({ intro: false })} className="intro-links" id="intro-about" to="/about">About</NavLink>
+                      <NavLink onClick={() => this.setState({ intro: false })} className="intro-links" id="intro-contact" to="/contact">Contact</NavLink>
+                    </div>
         
-            </div>
+                    <div className="row1-buttons">
+                      <NavLink onClick={() => this.setState({ intro: false })} className="intro-links" to="/photography">Photography</NavLink>
+                      
+                      <NavLink onClick={() => this.setState({ intro: false })} className="intro-links" to="/wedding">Weddings</NavLink>
+
+                      <NavLink onClick={() => this.setState({ intro: false })} className="intro-links" to="/headshots">Headshots</NavLink>
+                    </div>
+                    
+                    <div className="row2-buttons">
+                      <NavLink onClick={() => this.setState({ intro: false })} className="intro-links" to="/familyportrait">Family Portraits</NavLink>
+
+                      <NavLink onClick={() => this.setState({ intro: false })} className="intro-links" to="/music">Musical Performances</NavLink>
+                    </div>
+            
+              </div>
              </Router>
             {/* Hidden button  */}
           </div>
