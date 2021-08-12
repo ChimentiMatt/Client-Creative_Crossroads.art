@@ -73,7 +73,7 @@ class App extends React.Component {
                     <div className="row2-buttons">
                       <NavLink onClick={() => this.setState({ intro: false })} className="intro-links" to="/familyportrait">Family Portraits</NavLink>
 
-                      <NavLink onClick={() => this.setState({ intro: false })} className="intro-links" to="/music">Musical Performances</NavLink>
+                      <NavLink onClick={() => this.setState({ intro: false })} className="intro-links" to="/music">Musical Permances</NavLink>
                     </div>
             
               </div>
