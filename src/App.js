@@ -25,7 +25,7 @@ import {
 } from "react-router-dom";
 import gsapCore from "gsap/gsap-core";
 
-// Note for heroku push test
+// Note for heroku push test 2
 
 class App extends React.Component {
   constructor(props) {
