@@ -613,7 +613,7 @@
   #intro-h1{
     color: black;
     
-    text-shadow: 2px 2px 2px black;
+    /* text-shadow: 2px 2px 2px black; */
     text-align: end;
     justify-content: flex-end;
     align-items: flex-end;
@@ -622,7 +622,7 @@
     /* text-shadow: 2px 2px 2px black; */
   }
   #intro-h1:hover{
-    color: white;
+    color: #0085b6;
   }
 
   .watermark{
