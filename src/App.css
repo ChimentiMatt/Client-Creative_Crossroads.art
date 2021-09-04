@@ -611,7 +611,8 @@
     margin-right: 50px;
   }
   #intro-h1{
-    color: wheat;
+    color: black;
+    
     text-shadow: 2px 2px 2px black;
     text-align: end;
     justify-content: flex-end;
