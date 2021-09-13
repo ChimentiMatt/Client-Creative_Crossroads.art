@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 
-import { IconContext } from "react-icons";
-import { FaInstagram } from "react-icons/fa";
-
+// import { IconContext } from "react-icons";
+// import { FaInstagram } from "react-icons/fa";
 import Lake from "../img-phot/worlds2.jpg"
 
 export default function ContactPages() {
@@ -35,23 +34,8 @@ export default function ContactPages() {
             <div className="container-contact-img">
                 <img id="contact-img" src={Lake} alt={"lake"}></img>
             </div>
-            <div className="container-contact-body">
-                <h1>Contact</h1>
-                <p>Want to book for Photos or Music?</p>
-                <p>Have any specific requests or questions?</p>
-                <p>Eamil me or fill out the form below</p>
-                <p>sfchim@msn.com</p>
-                <p id="ContainerInstagramIcon" onClick={()=> window.open("https://www.instagram.com/suzannechim/", "_blank")}>
-                    <IconContext.Provider value={{ size: "2em", hover: "red"}}>
-                        <div id="instagramIcon">
-                            <FaInstagram/>
-                        </div>
-                    </IconContext.Provider>
-                </p>
-    
 
-            </div>
-            <div className="line"></div>
+
 
 
             <div className='sent-message'>
@@ -66,20 +50,20 @@ export default function ContactPages() {
 
                     <form onSubmit={sendEmail}>
                         <label>
-                            <input disabled={disabled} class="contact-form-field" name="name" placeholder="Name"></input>
+                            <input disabled={disabled} className="contact-form-field" name="name" placeholder="Name"></input>
                         </label>
                         <label>
-                            <input disabled={disabled} class="contact-form-field" name="email" placeholder="Email"></input>
+                            <input disabled={disabled} className="contact-form-field" name="email" placeholder="Email"></input>
                         </label>
                         <label>
-                            <input disabled={disabled} class="contact-form-field" name="phone_number"placeholder="Phone Number"></input>
+                            <input disabled={disabled} className="contact-form-field" name="phone_number"placeholder="Phone Number"></input>
                         </label>
                         <label>
-                            <input disabled={disabled} class="contact-form-field" name="pre_date" placeholder="Preferred Date"></input>
+                            <input disabled={disabled} className="contact-form-field" name="pre_date" placeholder="Preferred Date"></input>
                         </label>
 
                         <label for="product">
-                            <select disabled={disabled} name="product" class="product-drop-down">
+                            <select disabled={disabled} name="product" className="product-drop-down">
                                 <option value="Weddings">Interested In</option>
                                 <option value="Weddings">Weddings</option>
                                 <option value="Photography">Photography</option>
@@ -89,15 +73,15 @@ export default function ContactPages() {
                             </select>
                         </label>
                         <label>
-                            <textarea disabled={disabled} class="form-field" name="message" placeholder="Anything you want me to know" type="text"></textarea>
+                            <textarea disabled={disabled} className="form-field" name="message" placeholder="Anything you want me to know" type="text"></textarea>
                         </label>
                         <label>
-                            <input type="submit" disabled={disabled} class="form-btn" value="Submit" ></input>
+                            <input type="submit" disabled={disabled} className="form-btn" value="Submit" ></input>
                         </label>
                         </form>
                 </div>
-                {/* <img className="right-img" src={Glory} alt="test" /> */}
             </div>
+                <div id="contactPageExtraSpacing"></div>
         </div>
     )
 }

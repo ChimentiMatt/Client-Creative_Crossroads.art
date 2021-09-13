@@ -13,7 +13,7 @@ export default function AboutPage() {
             </div>
             <div className="container-about-text">
                 <p className="about-heading-text">
-                    About Me
+                    ABOUT ME
                 </p>
                 <p className="about-text">
                     My name is Suzanne Chimenti and I have spent my life happily exploring the arts. I live right outside Portland in Damascus Oregon. I am specialized in music and photography. As a young girl, I learned how to sing and play the piano with my mother.  I continued music into adulthood by learning an assortment of instruments such as the violin, guitar, and banjo. I am in the Willamette Valley Orchestra, I have been a theatrical actor and I have directed high school productions. For my formal career, I became a music teacher and have taught elementary, middle, and high schools. 

@@ -33,14 +33,14 @@ export default function MusicPage() {
             </div>
             <div className="container-contact-body">
 
-                <h1>Music</h1>
+                <h1>MUSIC</h1>
                 <p>Want to book Suzanne as a musician?</p>
                 <p>Have any specific requests or questions?</p>
                 <p>Eamil me or fill out the form below</p>
                 <p>sfchim@msn.com</p>
             </div>
-                <div className="line"></div>
-                    <h1 id="music-about-header">About My Musical Career</h1>
+                <div className="howI">
+                <h1 id="music-about-header">ABOUT MY MUSICAL CAREER</h1>
                 <div id="container-music-about">
 
                     <p id="music-about">Growing up in Milwaukie, Oregon, I was a reluctant and rebellious piano student of my piano
@@ -61,13 +61,12 @@ export default function MusicPage() {
                         featured I can locate and hire those musicians for you.
                                         </p>
                 </div>
-     
-            <div className="line"></div>
+                </div>
 
 
             <div className='sent-message'>
 
-                <h1 id="music-h1">Contact Me </h1>
+                <h1 id="music-h1">CONTACT ME</h1>
                 <p style={{display: visibility}}>You will recieve a call within 24 Hours</p>
                 <p style={{display: visibility}}>Suzanne Chimenti</p>
 
@@ -77,20 +76,18 @@ export default function MusicPage() {
 
                     <form onSubmit={sendEmail}>
                         <label>
-                            <input disabled={disabled} class="contact-form-field" name="name" placeholder="Name"></input>
+                            <input disabled={disabled} className="contact-form-field" name="name" placeholder="Name"></input>
                         </label>
                         <label>
-                            <input disabled={disabled} class="contact-form-field" name="email" placeholder="Email"></input>
+                            <input disabled={disabled} className="contact-form-field" name="email" placeholder="Email"></input>
                         </label>
                         <label>
-                            <input disabled={disabled} class="contact-form-field" name="phone_number"placeholder="Phone Number"></input>
-                        </label>
-                        <label>
-                            <input disabled={disabled} class="contact-form-field" name="pre_date" placeholder="Preferred Date"></input>
+                            <input disabled={disabled} className="contact-form-field" name="phone_number"placeholder="Phone Number"></input>
                         </label>
 
+
                         <label for="product">
-                            <select disabled={disabled} name="product" class="product-drop-down">
+                            <select disabled={disabled} name="product" className="product-drop-down">
                                 <option value="Weddings">Interested In</option>
                                 <option value="Weddings">Weddings</option>
                                 <option value="Photography">Photography</option>
@@ -100,10 +97,10 @@ export default function MusicPage() {
                             </select>
                         </label>
                         <label>
-                            <textarea disabled={disabled} class="form-field" name="message" placeholder="Anything you want me to know" type="text"></textarea>
+                            <textarea disabled={disabled} className="form-field" name="message" placeholder="Anything you want me to know" type="text"></textarea>
                         </label>
                         <label>
-                            <input type="submit" disabled={disabled} class="form-btn" value="Submit" ></input>
+                            <input type="submit" disabled={disabled} className="form-btn" value="Submit" ></input>
                         </label>
                         </form>
                 </div>

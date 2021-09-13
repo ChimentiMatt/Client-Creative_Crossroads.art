@@ -118,14 +118,14 @@ function FormWedding(params) {
     return (
         <>
             <div className="container-contact-body">
-                <h1>Book For Your Wedding</h1>
+                <h1>BOOK YOUR WEDDING</h1>
                 <p>Want to book for your Wedding and events?</p>
                 <p>Have any specific requests or questions?</p>
                 <p>Eamil me or fill out the form below</p>
                 <p>sfchim@msn.com</p>
             </div>
-            <div id="weddingHowI">
-                <h1 id="weddings-about-header">How I Photograph Your Wedding</h1>
+            <div className="howI">
+                <h1 id="weddings-about-header">HOW I PHOTOGRAPH YOUR WEDDING</h1>
                 <div id="container-weddings-about">
                 <p id="weddings-about">It’s your day and I want the shots to be a wonderful memory for you. Before the wedding we will talk about your needs and I will do my best 
                 to make you 100% happy.  
@@ -141,7 +141,7 @@ function FormWedding(params) {
 
 
             <div className='sent-message'>
-                <h1 id="wedding-h1">Contact Me</h1>
+                <h1 id="wedding-h1">CONTACT ME</h1>
                 <p style={{ display: visibility }}>You will recieve a call within 24 Hours</p>
                 <p style={{ display: visibility }}>Suzanne Chimenti</p>
             </div>
@@ -149,23 +149,23 @@ function FormWedding(params) {
                 <div className="inner-container-contact-form">
                     <form onSubmit={sendEmail}>
                         <label>
-                            <input disabled={disabled} class="contact-form-field" name="name" placeholder="Name"></input>
+                            <input disabled={disabled} className="contact-form-field" name="name" placeholder="Name"></input>
                         </label>
                         <label>
-                            <input disabled={disabled} class="contact-form-field" name="email" placeholder="Email"></input>
+                            <input disabled={disabled} className="contact-form-field" name="email" placeholder="Email"></input>
                         </label>
                         <label>
-                            <input disabled={disabled} class="contact-form-field" name="phone_number" placeholder="Phone Number"></input>
+                            <input disabled={disabled} className="contact-form-field" name="phone_number" placeholder="Phone Number"></input>
                         </label>
                         <label>
-                            <input disabled={disabled} class="contact-form-field" name="pre_date" placeholder="Event Date(s)"></input>
+                            <input disabled={disabled} className="contact-form-field" name="pre_date" placeholder="Event Date(s)"></input>
                         </label>
 
                         <label>
-                            <textarea disabled={disabled} class="form-field" name="message" placeholder="Anything you want me to know" type="text"></textarea>
+                            <textarea disabled={disabled} className="form-field" name="message" placeholder="Anything you want me to know" type="text"></textarea>
                         </label>
                         <label>
-                            <input disabled={disabled} type="submit" class="form-btn" value="Submit" ></input>
+                            <input disabled={disabled} type="submit" className="form-btn" value="Submit" ></input>
                         </label>
                     </form>
 

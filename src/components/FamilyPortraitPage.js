@@ -76,30 +76,28 @@ function FamilyContent() {
 }
   return(
     <div className="familyContent">
-        
-            <div className="line"></div>
+      
             <div className="container-contact-body">
-                <h1>Book Your Family</h1>
+                <h1>BOOK YOUR FAMILY</h1>
                 {/* <p>Want to book for your big day</p> */}
                 <p>Have any specific requests or questions?</p>
                 <p>Eamil me or fill out the form below</p>
                 <p>sfchim@msn.com</p>
-                <div className="line"></div>
             </div>
-            <h1 id="family-about-header">About How I Photograph Your Family</h1>
+          <div className="howI">
+            <h1 id="family-about-header">HOW I PHOTOGRAPH YOUR FAMILY</h1>
                 <div id="container-family-about">
                 <p id="family-about">When you have family photos taken, you create memories for both yourself and for future generations. I especially love photographing kids. It reminds me of all of those years of teaching music in public schools. 
 Together we can choose a location that is especially meaningful to you.  Contact me and let’s talk about it.
                     </p>
-              
+                    </div>    
                 </div>
 
 
-            <div className="line"></div>
 
             <div className='sent-message'>
 
-                <h1 id="family-h1">Contact Me </h1>
+                <h1 id="family-h1">CONTACT ME</h1>
                 <p style={{ display: visibility }}>You will recieve a call within 24 Hours</p>
                 <p style={{ display: visibility }}>Suzanne Chimenti</p>
             </div>
@@ -107,23 +105,23 @@ Together we can choose a location that is especially meaningful to you.  Contact
                 <div className="inner-container-contact-form">
                     <form onSubmit={sendEmail}>
                         <label>
-                            <input disabled={disabled} class="contact-form-field" name="name" placeholder="Name"></input>
+                            <input disabled={disabled} className="contact-form-field" name="name" placeholder="Name"></input>
                         </label>
                         <label>
-                            <input disabled={disabled} class="contact-form-field" name="email" placeholder="Email"></input>
+                            <input disabled={disabled} className="contact-form-field" name="email" placeholder="Email"></input>
                         </label>
                         <label>
-                            <input disabled={disabled} class="contact-form-field" name="phone_number" placeholder="Phone Number"></input>
+                            <input disabled={disabled} className="contact-form-field" name="phone_number" placeholder="Phone Number"></input>
                         </label>
                         <label>
-                            <input disabled={disabled} class="contact-form-field" name="pre_date" placeholder="Preferred Date"></input>
+                            <input disabled={disabled} className="contact-form-field" name="pre_date" placeholder="Preferred Date"></input>
                         </label>
 
                         <label>
-                            <textarea disabled={disabled} class="form-field" name="message" placeholder="Anything you want me to know" type="text"></textarea>
+                            <textarea disabled={disabled} className="form-field" name="message" placeholder="Anything you want me to know" type="text"></textarea>
                         </label>
                         <label>
-                            <input disabled={disabled} type="submit" class="form-btn" value="Submit" ></input>
+                            <input disabled={disabled} type="submit" className="form-btn" value="Submit" ></input>
                         </label>
                     </form>
                 </div>

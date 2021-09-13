@@ -74,27 +74,24 @@ function FormHeadshots(params) {
 
   return (
     <>
-      <div className="line"></div>
 
       <div className="container-contact-body">
-        <h1>Headshots</h1>
+        <h1>HEADSHOTS</h1>
         <p>Want to book for headshots?</p>
         <p>Have any specific requests or questions?</p>
         <p>Eamil me or fill out the form below</p>
         <p>sfchim@msn.com</p>
-        <div className="line"></div>  
       </div>
 
-
-      <h1 id="headshots-about-header">How I Take Your Headshots</h1>
+      <div className="howI">
+        <h1 id="headshots-about-header">HOW I TAKE YOUR HEADSHOTS</h1>
                 <div id="container-headshots-about">
-                <p id="headshots-about">I have a home photography studio.  If you want formal photos I can either have you come to my home in Damascus, Oregon or I can bring my equipment to you.  For natural lighting, we can meet at your favorite park or whatever setting you would most enjoy.  It’s all about. You and I want you to be comfortable.</p>
-              
+                  <p id="headshots-about">I have a home photography studio.  If you want formal photos I can either have you come to my home in Damascus, Oregon or I can bring my equipment to you.  For natural lighting, we can meet at your favorite park or whatever setting you would most enjoy.  It’s all about. You and I want you to be comfortable.</p>
                 </div>
-                <div className="line"></div>  
+      </div>
       <div className='sent-message'>
 
-              <h1 id="headshots-h1">Contact Me </h1>
+              <h1 id="headshots-h1">CONTACT ME</h1>
               <p style={{display: visibility}}>You will recieve a call within 24 Hours</p>
               <p style={{display: visibility}}>Suzanne Chimenti</p>
       </div>
@@ -104,14 +101,14 @@ function FormHeadshots(params) {
         <div className="inner-container-contact-form">
 
           <form onSubmit={sendEmail}>
-            <input disabled={disabled} class="contact-form-field" name="name" placeholder="Name"></input>
-            <input disabled={disabled} class="contact-form-field" name="email" placeholder="Email"></input>
-            <input disabled={disabled} class="contact-form-field" name="phone_number" placeholder="Phone Number"></input>
+            <input disabled={disabled} className="contact-form-field" name="name" placeholder="Name"></input>
+            <input disabled={disabled} className="contact-form-field" name="email" placeholder="Email"></input>
+            <input disabled={disabled} className="contact-form-field" name="phone_number" placeholder="Phone Number"></input>
 
-            <input disabled={disabled} class="contact-form-field" name="pre_date" placeholder="Preferred Date"></input>
+            <input disabled={disabled} className="contact-form-field" name="pre_date" placeholder="Preferred Date"></input>
 
-            <textarea disabled={disabled} class="form-field" name="message" placeholder="Anything you want me to know" type="text"></textarea>
-            <button disabled={disabled} class="form-btn" >Submit Form</button>
+            <textarea disabled={disabled} className="form-field" name="message" placeholder="Anything you want me to know" type="text"></textarea>
+            <button disabled={disabled} className="form-btn" >Submit Form</button>
           </form>
         </div>
         {/* <img className="right-img" src={Glory} alt="test" /> */}

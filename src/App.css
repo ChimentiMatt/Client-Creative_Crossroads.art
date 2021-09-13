@@ -256,8 +256,8 @@
 .container-contact-body{
   align-items: center;
   text-align: center;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 .container-contact-body h1{
   letter-spacing: 4px;
@@ -266,7 +266,7 @@
 }
 .container-contact-body p{
   margin-bottom: 10px;
-  font-size: 16px;
+  font-size: 1.5rem;
   text-align: center;
   font-family: 'Roboto', sans-serif;
 }
@@ -312,7 +312,7 @@
   margin-top: 50px;
   font-size: 30px;
   letter-spacing: 4px;
-  font-size: 35px;
+  font-size: 3rem;
 }
 .about-text{
   display: flex;
@@ -348,6 +348,7 @@
 #family-about-header{
   text-align: center;
   margin-bottom: 20px;
+  font-size: 3rem;
 }
 #container-family-about{
   display: flex;
@@ -355,7 +356,7 @@
 }
 #family-about{
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-size: 2rem;
   line-height: 1.8;
   width: 1000px;
 }
@@ -363,7 +364,8 @@
 /* Photography Page - Gallery  ----------------------------------------*/
 
 .container-photos{
-  margin: 20px;
+  margin-top: 3rem;
+  /* margin: 20px; */
 }
 
 .photo:hover {
@@ -384,6 +386,7 @@
 
 #container-photog-about h1{
   text-align: center;
+  font-size: 3rem;
 }
 #container-photog-about p{
   width: 1000px;
@@ -408,7 +411,7 @@
   height: 300px;
   width: 1000px;
   margin-top: 25px;
-  margin-bottom: 50px;
+
 }
 
 
@@ -423,6 +426,7 @@
 
 #music-about-header{
   text-align: center;
+  font-size: 3rem;
 }
 
 #music-about{
@@ -431,7 +435,10 @@
   width: 1000px;
   font-family: 'Roboto', sans-serif;
 }
+#contactPageExtraSpacing{
+  margin-bottom: 10rem;
 
+}
 
 
 /* Universal  Contact  Form ------------------------------------*/
@@ -442,6 +449,7 @@
   text-align: center;
   height: 450px;
   justify-content: center;
+  margin-bottom: 6rem;
 }
 .sent-message{
   display: flex;
@@ -449,7 +457,8 @@
   justify-content: center;
   text-align: center;
   /* margin-bottom: 30px; */
-  margin-top: 3rem;
+  margin-top: 6rem;
+
 }
 
 
@@ -532,6 +541,7 @@
 #headshots-about-header{
   text-align: center;
   margin-bottom: 20px;
+  font-size: 3rem;
 }
 #container-headshots-about{
   display: flex;
@@ -568,9 +578,9 @@
   font-size: 16px;
 }
 
-#weddingHowI{
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.howI{
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   background: #1f1f1f;
   color: white;
 }
@@ -580,8 +590,7 @@
   height: 50px;
   background: rgba(0, 0, 0);
   background: #1f1f1f;
-  color: rgb(100, 100, 100);
-  
+  color: white;
 }
 
 .footer-text{
@@ -590,7 +599,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   font-size: 15px;
-  margin-top: 100px;
+
   align-items: center;
   letter-spacing: 2px;
 }
@@ -792,12 +801,10 @@
   .container-about-text{
     word-wrap: break-word;
     word-wrap: break-word;
-    border-bottom: 1px solid black;
-
   }
   .about-heading-text{
     margin-top: 30px;
-    font-size: 30px;
+
   }
   .about-text{
     display: flex;
@@ -811,15 +818,12 @@
   }
 
   /* photography page */
-  .container-photos{
-    margin: 5px;
-  }
+
   #container-photog-about p {
     margin-left: 15px;
     margin-right: 15px;
     width: 90vw;
     line-height: 1.3;
-
   }
 
   /* Weddings Page */
@@ -839,7 +843,6 @@
   }
   /* Headshots Page */
   #headshots-about-header{
-    font-size: 30px;
   }
   #container-headshots-about{
     font-size: 16px;
@@ -854,9 +857,7 @@
   .family-about{
     width: 90vw;
   }
-  #family-about-header{
-    font-size: 30px;
-  }
+
   #family-about{
     
     width: 90vw;
@@ -877,9 +878,6 @@
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
   }
-  #container-photog-about h1{
-    font-size: 30px;
-  }
   #container-photog-about p{
     font-size: 17px;
     font-family: 'Roboto', sans-serif;
@@ -890,9 +888,7 @@
     font-family: 'Roboto', sans-serif;
   }
 
-  #music-about-header{
-    font-size: 30px;
-  }
+
   #music-about{
     font-size: 16px;
   }
