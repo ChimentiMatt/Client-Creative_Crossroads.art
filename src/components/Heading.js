@@ -25,17 +25,17 @@ function ProductATags() {
                 <Link className="logo" to="/home">CREATIVE CROSSROADS</Link>
 
 
-                    <div className='container-a-tag'>
-                        <Link className="links" to="/photography">PHOTOGRAPHY</Link>
-        
-                        <Link className="links" to="/wedding">WEDDING PHOTOGRAPHY</Link>
+                <div className='container-a-tag'>
+                    <Link className="links" to="/photography">PHOTOGRAPHY</Link>
 
-                        <Link className="links" to="/headshots">HEADSHOTS</Link>
+                    <Link className="links" to="/wedding">WEDDING PHOTOGRAPHY</Link>
 
-                        <Link className="links" to="/familyportrait">FAMILY PORTRAITS</Link>
+                    <Link className="links" to="/headshots">HEADSHOTS</Link>
 
-                        <Link className="links" to="/music">MUSICAL PERFORMANCES</Link>
-                    </div>
+                    <Link className="links" to="/familyportrait">FAMILY PORTRAITS</Link>
+
+                    <Link className="links" to="/music">MUSICAL PERFORMANCES</Link>
+                </div>
 
             </div>
             <div className="content-body">

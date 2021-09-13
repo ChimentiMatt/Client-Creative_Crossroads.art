@@ -11,7 +11,7 @@ import juneHus from '../img-headshots/junehus.jpeg'
 export default function Headshots(props) {
   useEffect(() => {
     document.title = 'Headshots'
-})
+  })
   return (
     <div >
       <GalleryHeadshots />
@@ -39,7 +39,7 @@ function GalleryHeadshots() {
       thumbnail: `${juneHus}`,
     },
   ];
-  return(
+  return (
     <>
       <div id="headshot-gallery">
         <ImageGallery items={images} />
@@ -85,15 +85,15 @@ function FormHeadshots(params) {
 
       <div className="howI">
         <h1 id="headshots-about-header">HOW I TAKE YOUR HEADSHOTS</h1>
-                <div id="container-headshots-about">
-                  <p id="headshots-about">I have a home photography studio.  If you want formal photos I can either have you come to my home in Damascus, Oregon or I can bring my equipment to you.  For natural lighting, we can meet at your favorite park or whatever setting you would most enjoy.  It’s all about. You and I want you to be comfortable.</p>
-                </div>
+        <div id="container-headshots-about">
+          <p id="headshots-about">I have a home photography studio.  If you want formal photos I can either have you come to my home in Damascus, Oregon or I can bring my equipment to you.  For natural lighting, we can meet at your favorite park or whatever setting you would most enjoy.  It’s all about. You and I want you to be comfortable.</p>
+        </div>
       </div>
       <div className='sent-message'>
 
-              <h1 id="headshots-h1">CONTACT ME</h1>
-              <p style={{display: visibility}}>You will recieve a call within 24 Hours</p>
-              <p style={{display: visibility}}>Suzanne Chimenti</p>
+        <h1 id="headshots-h1">CONTACT ME</h1>
+        <p style={{ display: visibility }}>You will recieve a call within 24 Hours</p>
+        <p style={{ display: visibility }}>Suzanne Chimenti</p>
       </div>
 
       <div className="container-contact-form">

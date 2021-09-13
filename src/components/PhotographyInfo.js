@@ -57,12 +57,12 @@ export default function PhotoInfo() {
                         bring my skills, a finely tuned work ethic and a sense of joy in doing what I love to make your
                         day extra special.
                     </p>
-                    </div>
+                </div>
             </div>
             <div className='sent-message'>
                 <h1 id="photo-h1">CONTACT ME</h1>
-                <p style={{display: visibility}}>You will recieve a call within 24 Hours</p>
-                <p style={{display: visibility}}>Suzanne Chimenti</p>
+                <p style={{ display: visibility }}>You will recieve a call within 24 Hours</p>
+                <p style={{ display: visibility }}>Suzanne Chimenti</p>
             </div>
             <div className="container-contact-form">
                 <div className="inner-container-contact-form">

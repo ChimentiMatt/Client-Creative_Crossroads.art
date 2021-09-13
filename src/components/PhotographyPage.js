@@ -168,10 +168,10 @@ const photos = [
     },
 ];
 
-const BasicRows = () => 
-<Gallery 
-    id='1' 
-    photos={photos} 
-/>
+const BasicRows = () =>
+    <Gallery
+        id='1'
+        photos={photos}
+    />
 
 export default BasicRows

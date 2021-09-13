@@ -19,17 +19,17 @@ export default function MusicPage() {
         emailjs.sendForm('service_2201c2n', "template_a70c99a", e.target, 'user_7oFNkpAKDIKus9MJJpUuF')
             .then((result) => {
                 console.log("result text", result.text);
-                
+
             }, (error) => {
                 console.log("error", error.text);
-                
+
             });
     }
 
     return (
         <div >
             <div className="container-contact-img">
-            <img id="music-img" src={centerpieceImg} alt="test" />
+                <img id="music-img" src={centerpieceImg} alt="test" />
             </div>
             <div className="container-contact-body">
 
@@ -39,7 +39,7 @@ export default function MusicPage() {
                 <p>Eamil me or fill out the form below</p>
                 <p>sfchim@msn.com</p>
             </div>
-                <div className="howI">
+            <div className="howI">
                 <h1 id="music-about-header">ABOUT MY MUSICAL CAREER</h1>
                 <div id="container-music-about">
 
@@ -59,16 +59,16 @@ export default function MusicPage() {
                         system to play music for dancing, or a cordless microphone for announcements, I am happy to
                         provide that. I also have many musician friends so if you would like another instrument to be
                         featured I can locate and hire those musicians for you.
-                                        </p>
+                    </p>
                 </div>
-                </div>
+            </div>
 
 
             <div className='sent-message'>
 
                 <h1 id="music-h1">CONTACT ME</h1>
-                <p style={{display: visibility}}>You will recieve a call within 24 Hours</p>
-                <p style={{display: visibility}}>Suzanne Chimenti</p>
+                <p style={{ display: visibility }}>You will recieve a call within 24 Hours</p>
+                <p style={{ display: visibility }}>Suzanne Chimenti</p>
 
             </div>
             <div className="container-contact-form">
@@ -82,7 +82,7 @@ export default function MusicPage() {
                             <input disabled={disabled} className="contact-form-field" name="email" placeholder="Email"></input>
                         </label>
                         <label>
-                            <input disabled={disabled} className="contact-form-field" name="phone_number"placeholder="Phone Number"></input>
+                            <input disabled={disabled} className="contact-form-field" name="phone_number" placeholder="Phone Number"></input>
                         </label>
 
 
@@ -102,7 +102,7 @@ export default function MusicPage() {
                         <label>
                             <input type="submit" disabled={disabled} className="form-btn"></input>
                         </label>
-                        </form>
+                    </form>
                 </div>
                 {/* <img className="right-img" src={Glory} alt="test" /> */}
             </div>

@@ -23,10 +23,10 @@ export default function ContactPages() {
         emailjs.sendForm('service_2201c2n', "template_a70c99a", e.target, 'user_7oFNkpAKDIKus9MJJpUuF')
             .then((result) => {
                 console.log("result text", result.text);
-                
+
             }, (error) => {
                 console.log("error", error.text);
-                
+
             });
     }
     return (
@@ -41,8 +41,8 @@ export default function ContactPages() {
             <div className='sent-message'>
 
                 <h1 id='contact-h1'>Contact Me </h1>
-                <p style={{display: visibility}}>You will recieve a call within 24 Hours</p>
-                <p style={{display: visibility}}>Suzanne Chimenti</p>
+                <p style={{ display: visibility }}>You will recieve a call within 24 Hours</p>
+                <p style={{ display: visibility }}>Suzanne Chimenti</p>
 
             </div>
             <div className="container-contact-form">
@@ -56,7 +56,7 @@ export default function ContactPages() {
                             <input disabled={disabled} className="contact-form-field" name="email" placeholder="Email"></input>
                         </label>
                         <label>
-                            <input disabled={disabled} className="contact-form-field" name="phone_number"placeholder="Phone Number"></input>
+                            <input disabled={disabled} className="contact-form-field" name="phone_number" placeholder="Phone Number"></input>
                         </label>
                         <label>
                             <input disabled={disabled} className="contact-form-field" name="pre_date" placeholder="Preferred Date"></input>
@@ -78,10 +78,10 @@ export default function ContactPages() {
                         <label>
                             <input type="submit" disabled={disabled} className="form-btn"></input>
                         </label>
-                        </form>
+                    </form>
                 </div>
             </div>
-                <div id="contactPageExtraSpacing"></div>
+            <div id="contactPageExtraSpacing"></div>
         </div>
     )
 }

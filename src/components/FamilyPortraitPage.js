@@ -12,7 +12,7 @@ import img8 from "../img-family/img8.jpeg";
 export default function FamilyPortraitPage(props) {
   useEffect(() => {
     document.title = 'Family'
-})
+  })
   return (
     <div className="family-page">
       <FamilyGallery />
@@ -48,11 +48,11 @@ function FamilyGallery() {
       thumbnail: `${img8}`,
     },
   ];
-return(
+  return (
     <>
-    <ImageGallery items={images} />
+      <ImageGallery items={images} />
     </>
-)
+  )
 }
 
 function FamilyContent() {
@@ -66,68 +66,68 @@ function FamilyContent() {
     document.getElementById('family-h1').innerHTML = 'Thank You'
     document.getElementById('family-h1').style.color = 'Teal'
     emailjs.sendForm('service_2201c2n', "template_a70c99a", e.target, 'user_7oFNkpAKDIKus9MJJpUuF')
-        .then((result) => {
-            console.log("result text", result.text);
+      .then((result) => {
+        console.log("result text", result.text);
 
-        }, (error) => {
-            console.log("error", error.text);
+      }, (error) => {
+        console.log("error", error.text);
 
-        });
-}
-  return(
+      });
+  }
+  return (
     <div className="familyContent">
-      
-            <div className="container-contact-body">
-                <h1>BOOK YOUR FAMILY</h1>
-                {/* <p>Want to book for your big day</p> */}
-                <p>Have any specific requests or questions?</p>
-                <p>Eamil me or fill out the form below</p>
-                <p>sfchim@msn.com</p>
-            </div>
-          <div className="howI">
-            <h1 id="family-about-header">HOW I PHOTOGRAPH YOUR FAMILY</h1>
-                <div id="container-family-about">
-                <p id="family-about">When you have family photos taken, you create memories for both yourself and for future generations. I especially love photographing kids. It reminds me of all of those years of teaching music in public schools. 
-Together we can choose a location that is especially meaningful to you.  Contact me and let’s talk about it.
-                    </p>
-                    </div>    
-                </div>
+
+      <div className="container-contact-body">
+        <h1>BOOK YOUR FAMILY</h1>
+        {/* <p>Want to book for your big day</p> */}
+        <p>Have any specific requests or questions?</p>
+        <p>Eamil me or fill out the form below</p>
+        <p>sfchim@msn.com</p>
+      </div>
+      <div className="howI">
+        <h1 id="family-about-header">HOW I PHOTOGRAPH YOUR FAMILY</h1>
+        <div id="container-family-about">
+          <p id="family-about">When you have family photos taken, you create memories for both yourself and for future generations. I especially love photographing kids. It reminds me of all of those years of teaching music in public schools.
+            Together we can choose a location that is especially meaningful to you.  Contact me and let’s talk about it.
+          </p>
+        </div>
+      </div>
 
 
 
-            <div className='sent-message'>
+      <div className='sent-message'>
 
-                <h1 id="family-h1">CONTACT ME</h1>
-                <p style={{ display: visibility }}>You will recieve a call within 24 Hours</p>
-                <p style={{ display: visibility }}>Suzanne Chimenti</p>
-            </div>
-            <div className="container-contact-form">
-                <div className="inner-container-contact-form">
-                    <form onSubmit={sendEmail}>
-                        <label>
-                            <input disabled={disabled} className="contact-form-field" name="name" placeholder="Name"></input>
-                        </label>
-                        <label>
-                            <input disabled={disabled} className="contact-form-field" name="email" placeholder="Email"></input>
-                        </label>
-                        <label>
-                            <input disabled={disabled} className="contact-form-field" name="phone_number" placeholder="Phone Number"></input>
-                        </label>
-                        <label>
-                            <input disabled={disabled} className="contact-form-field" name="pre_date" placeholder="Preferred Date"></input>
-                        </label>
+        <h1 id="family-h1">CONTACT ME</h1>
+        <p style={{ display: visibility }}>You will recieve a call within 24 Hours</p>
+        <p style={{ display: visibility }}>Suzanne Chimenti</p>
+      </div>
+      <div className="container-contact-form">
+        <div className="inner-container-contact-form">
+          <form onSubmit={sendEmail}>
+            <label>
+              <input disabled={disabled} className="contact-form-field" name="name" placeholder="Name"></input>
+            </label>
+            <label>
+              <input disabled={disabled} className="contact-form-field" name="email" placeholder="Email"></input>
+            </label>
+            <label>
+              <input disabled={disabled} className="contact-form-field" name="phone_number" placeholder="Phone Number"></input>
+            </label>
+            <label>
+              <input disabled={disabled} className="contact-form-field" name="pre_date" placeholder="Preferred Date"></input>
+            </label>
 
-                        <label>
-                            <textarea disabled={disabled} className="form-field" name="message" placeholder="Anything you want me to know" type="text"></textarea>
-                        </label>
-                        <label>
-                            <input disabled={disabled} type="submit" className="form-btn"></input>
-                        </label>
-                    </form>
-                </div>
-                {/* <img className="right-img" src={Glory} alt="test" /> */}
-            </div>
-    </div>    
+            <label>
+              <textarea disabled={disabled} className="form-field" name="message" placeholder="Anything you want me to know" type="text"></textarea>
+            </label>
+            <label>
+              <input disabled={disabled} type="submit" className="form-btn"></input>
+            </label>
+          </form>
+        </div>
+        {/* <img className="right-img" src={Glory} alt="test" /> */}
+      </div>
+    </div>
   )
 }
 
