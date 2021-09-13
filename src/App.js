@@ -20,7 +20,7 @@ import {
   Route,
 } from "react-router-dom";
 
-// Note for heroku push test 2.
+// Heroku Note
 
 class App extends React.Component {
   constructor(props) {
