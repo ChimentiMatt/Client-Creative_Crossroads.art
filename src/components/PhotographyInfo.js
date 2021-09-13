@@ -72,7 +72,7 @@ export default function PhotoInfo() {
                         <input disabled={disabled} className="contact-form-field" name="phone_number" placeholder="Phone Number"></input>
                         <input disabled={disabled} className="contact-form-field" name="product" placeholder="Which Photo"></input>
                         <textarea disabled={disabled} className="form-field" name="message" placeholder="Anything you want me to know" type="text"></textarea>
-                        <button disabled={disabled} className="form-btn" >Submit Form</button>
+                        <button disabled={disabled} className="form-btn">Submit Form</button>
                     </form>
                 </div>
                 {/* <img className="right-img" src={Glory} alt="test" /> */}

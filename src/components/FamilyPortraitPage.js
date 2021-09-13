@@ -121,7 +121,7 @@ Together we can choose a location that is especially meaningful to you.  Contact
                             <textarea disabled={disabled} className="form-field" name="message" placeholder="Anything you want me to know" type="text"></textarea>
                         </label>
                         <label>
-                            <input disabled={disabled} type="submit" className="form-btn" value="Submit" ></input>
+                            <input disabled={disabled} type="submit" className="form-btn"></input>
                         </label>
                     </form>
                 </div>

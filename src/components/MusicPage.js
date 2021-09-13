@@ -100,7 +100,7 @@ export default function MusicPage() {
                             <textarea disabled={disabled} className="form-field" name="message" placeholder="Anything you want me to know" type="text"></textarea>
                         </label>
                         <label>
-                            <input type="submit" disabled={disabled} className="form-btn" value="Submit" ></input>
+                            <input type="submit" disabled={disabled} className="form-btn"></input>
                         </label>
                         </form>
                 </div>
