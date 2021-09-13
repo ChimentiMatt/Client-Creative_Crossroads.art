@@ -18,11 +18,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
-  useRouteMatch,
-  useParams,
 } from "react-router-dom";
-import gsapCore from "gsap/gsap-core";
 
 // Note for heroku push test 2.
 
@@ -31,8 +27,6 @@ class App extends React.Component {
     super(props);
     this.state = {
       intro: true,
-      // activePage: false,
-      // cat: 'kittens',
       activeLink: false,
     };
   }
@@ -61,7 +55,7 @@ class App extends React.Component {
                   CREATIVE CROSSROADS
                 </NavLink>
               </div>
-              <img className="watermark" src={Logo5}></img>
+              <img className="watermark" src={Logo5} alt={"Watermark Signature"}></img>
 
               <div className="container-rows">
                 <div className="row0-buttons">
@@ -138,7 +132,7 @@ class App extends React.Component {
             <div className="container-heading">
               <p className="header-font">CREATIVE CROSSROADS</p>
               <div>
-                <img className="header-watermark" src={Logo5}></img>
+                <img className="header-watermark" src={Logo5} alt={"Logo"}></img>
 
                 <div className="about-contact">
                   <NavLink
@@ -257,17 +251,6 @@ class App extends React.Component {
     );
   }
 }
-function Animation() {
-  console.log("test");
-}
 
-// export default function LandingPage() {
-//   return (
-//     <div>Test 1 2 3 4 5</div>
-//   )
-// }
 
-// export default () => {
-//   return {App, LandingPage}
-// }
 export default App;

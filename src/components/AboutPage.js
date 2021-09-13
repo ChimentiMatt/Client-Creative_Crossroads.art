@@ -1,15 +1,6 @@
 import React, { useEffect } from 'react';
 import centerpieceImg from "../img-phot/suzanneAbout.jpeg"
 
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    useRouteMatch,
-    useParams
-} from "react-router-dom";
-
 export default function AboutPage() {
     useEffect(() => {
         document.title = 'About'
@@ -18,7 +9,7 @@ export default function AboutPage() {
         <div className="container-home">
 
             <div className="container-about-img">
-                <img id="about-img" src={centerpieceImg} alt="test" />
+                <img id="about-img" src={centerpieceImg} alt={"Suzanne"} />
             </div>
             <div className="container-about-text">
                 <p className="about-heading-text">

@@ -53,13 +53,11 @@ function GalleryHeadshots() {
 function FormHeadshots(params) {
   const [disabled, setDisabled] = useState(false);
   const [visibility, setBlock] = useState('none')
-  const [hide, setHidden] = useState('visible')
 
   function sendEmail(e) {
     e.preventDefault();
     setDisabled(true)
     setBlock('block')
-    setHidden('none')
     document.getElementById('headshots-h1').innerHTML = 'Thank you'
     document.getElementById('headshots-h1').style.color = 'teal'
     emailjs.sendForm('service_2201c2n', "template_xitg4tf", e.target, 'user_7oFNkpAKDIKus9MJJpUuF')
@@ -88,7 +86,7 @@ function FormHeadshots(params) {
       </div>
 
 
-      <h1 id="headshots-about-header">About How I Take Your Headshots</h1>
+      <h1 id="headshots-about-header">How I Take Your Headshots</h1>
                 <div id="container-headshots-about">
                 <p id="headshots-about">I have a home photography studio.  If you want formal photos I can either have you come to my home in Damascus, Oregon or I can bring my equipment to you.  For natural lighting, we can meet at your favorite park or whatever setting you would most enjoy.  It’s all about. You and I want you to be comfortable.</p>
               

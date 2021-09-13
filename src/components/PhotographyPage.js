@@ -1,11 +1,9 @@
 import React from "react";
-import { render } from "react-dom";
 import Gallery from "react-photo-gallery";
 
 import img1 from '../img-phot/another-world.jpeg';
 import img2 from '../img-phot/bird.jpeg';
 import img3 from '../img-phot/birds.jpeg';
-// import img4 from '../img-phot/camera-square.jpeg';
 import img5 from '../img-phot/children.jpeg';
 import img7 from '../img-phot/falls.jpeg';
 import img8 from '../img-phot/floral-corssroads.jpeg';
@@ -170,17 +168,10 @@ const photos = [
     },
 ];
 
-// temporary function that shows sucessful selection of photo
-const logFun = event => {
-    console.log('cats')
-    document.getElementsByClassName('photo')[0].style.height = '20px'
-}
-
 const BasicRows = () => 
 <Gallery 
     id='1' 
     photos={photos} 
-    // onClick={logFun}
 />
 
 export default BasicRows

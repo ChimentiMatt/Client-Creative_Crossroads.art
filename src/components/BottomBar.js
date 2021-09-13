@@ -1,6 +1,4 @@
 import React from 'react';
-import { IconContext } from "react-icons";
-import { FaInstagram } from "react-icons/fa";
 
 export default function BottomBar() {
     return (

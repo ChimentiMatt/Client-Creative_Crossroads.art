@@ -5,7 +5,6 @@ import centerpieceImg from "../img-phot/suzanne-cropped.jpg"
 export default function MusicPage() {
     const [disabled, setDisabled] = useState(false);
     const [visibility, setBlock] = useState('none')
-    const [hide, setHidden] = useState('visible')
 
     useEffect(() => {
         document.title = 'Music'
@@ -15,7 +14,6 @@ export default function MusicPage() {
         e.preventDefault();
         setDisabled(true)
         setBlock('block')
-        setHidden('none')
         document.getElementById('music-h1').innerHTML = 'Thank You'
         document.getElementById('music-h1').style.color = 'Teal'
         emailjs.sendForm('service_2201c2n', "template_a70c99a", e.target, 'user_7oFNkpAKDIKus9MJJpUuF')

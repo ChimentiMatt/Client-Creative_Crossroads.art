@@ -1,16 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 
-import Lake from "../img-phot/worlds2.jpg"
-
-import ReactDOM from 'react-dom'
 import { IconContext } from "react-icons";
 import { FaInstagram } from "react-icons/fa";
+
+import Lake from "../img-phot/worlds2.jpg"
 
 export default function ContactPages() {
     const [disabled, setDisabled] = useState(false);
     const [visibility, setBlock] = useState('none')
-    const [hide, setHidden] = useState('visible')
 
     useEffect(() => {
         document.title = 'Contact'
@@ -20,7 +18,6 @@ export default function ContactPages() {
         e.preventDefault();
         setDisabled(true)
         setBlock('block')
-        setHidden('none')
         document.getElementById('contact-h1').innerHTML = 'Thank You'
         document.getElementById('contact-h1').style.color = 'Teal'
 
@@ -36,7 +33,7 @@ export default function ContactPages() {
     return (
         <div >
             <div className="container-contact-img">
-                <img id="contact-img" src={Lake}></img>
+                <img id="contact-img" src={Lake} alt={"lake"}></img>
             </div>
             <div className="container-contact-body">
                 <h1>Contact</h1>

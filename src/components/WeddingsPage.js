@@ -18,16 +18,6 @@ import blackWhite from '../img-wedding/couple1.jpg'
 import vickyArch from '../img-wedding/vicky4.jpg'
 import ido from '../img-wedding/ido.jpeg'
 
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    useRouteMatch,
-    useParams
-} from "react-router-dom";
-
-
 export default function WeddingPage() {
     useEffect(() => {
         document.title = 'Weddings'
@@ -104,17 +94,14 @@ function WeddingGallery( ) {
     )
 }
 
-
 function FormWedding(params) {
     const [disabled, setDisabled] = useState(false);
     const [visibility, setBlock] = useState('none')
-    const [hide, setHidden] = useState('visible')
 
     function sendEmail(e) {
         e.preventDefault();
         setDisabled(true)
         setBlock('block')
-        setHidden('none')
         document.getElementById('wedding-h1').innerHTML = 'Thank You'
         document.getElementById('wedding-h1').style.color = 'teal'
         emailjs.sendForm('service_2201c2n', "template_abtq1im", e.target, 'user_7oFNkpAKDIKus9MJJpUuF')
@@ -130,7 +117,6 @@ function FormWedding(params) {
 
     return (
         <>
-            <div className="line"></div>
             <div className="container-contact-body">
                 <h1>Book For Your Wedding</h1>
                 <p>Want to book for your Wedding and events?</p>
@@ -138,8 +124,8 @@ function FormWedding(params) {
                 <p>Eamil me or fill out the form below</p>
                 <p>sfchim@msn.com</p>
             </div>
-            <div className="line"></div>
-                <h1 id="weddings-about-header">About How I Photograph Your Wedding</h1>
+            <div id="weddingHowI">
+                <h1 id="weddings-about-header">How I Photograph Your Wedding</h1>
                 <div id="container-weddings-about">
                 <p id="weddings-about">It’s your day and I want the shots to be a wonderful memory for you. Before the wedding we will talk about your needs and I will do my best 
                 to make you 100% happy.  
@@ -151,7 +137,7 @@ function FormWedding(params) {
 
                     If you choose, I can hire an extra photographer for part of the day.  I can use that person to shoot the actual wedding while I provide music. If I haul out my piano for the event, you can use my Bose Sound System and cordless microphone for your wedding.  Make a play list and hook it up to the sound system through your phone and you can have beautiful music for the reception and save money on a DJ.  Let’s talk.</p>
                 </div>
-            <div className="line"></div>
+            </div>   
 
 
             <div className='sent-message'>

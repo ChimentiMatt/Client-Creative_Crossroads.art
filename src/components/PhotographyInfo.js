@@ -4,7 +4,6 @@ import emailjs from 'emailjs-com';
 export default function PhotoInfo() {
     const [disabled, setDisabled] = useState(false);
     const [visibility, setBlock] = useState('none')
-    const [hide, setHidden] = useState('visible')
 
     useEffect(() => {
         document.title = 'Photography'
@@ -14,7 +13,6 @@ export default function PhotoInfo() {
         e.preventDefault();
         setDisabled(true)
         setBlock('block')
-        setHidden('none')
         document.getElementById('photo-h1').innerHTML = "Thank You"
         document.getElementById('photo-h1').style.color = "teal"
         emailjs.sendForm('service_2201c2n', "template_yu30god", e.target, 'user_7oFNkpAKDIKus9MJJpUuF')

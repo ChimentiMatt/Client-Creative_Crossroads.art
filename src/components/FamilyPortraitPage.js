@@ -6,19 +6,8 @@ import img1 from "../img-family/img1.jpeg";
 import img2 from "../img-family/img2.jpeg";
 import img3 from "../img-family/img3.jpeg";
 import img4 from "../img-family/img4.jpeg";
-import img5 from "../img-family/img5.jpeg";
-// import img6 from "./img-family/img6.jpeg";
 import img7 from "../img-family/img7.jpeg";
 import img8 from "../img-family/img8.jpeg";
-import Girl from "../img-family/squared-girl.jpg";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useRouteMatch,
-  useParams
-} from "react-router-dom";
 
 export default function FamilyPortraitPage(props) {
   useEffect(() => {
@@ -69,13 +58,11 @@ return(
 function FamilyContent() {
   const [disabled, setDisabled] = useState(false);
   const [visibility, setBlock] = useState('none')
-  const [hide, setHidden] = useState('visible')
 
   function sendEmail(e) {
     e.preventDefault();
     setDisabled(true)
     setBlock('block')
-    setHidden('none')
     document.getElementById('family-h1').innerHTML = 'Thank You'
     document.getElementById('family-h1').style.color = 'Teal'
     emailjs.sendForm('service_2201c2n', "template_a70c99a", e.target, 'user_7oFNkpAKDIKus9MJJpUuF')
