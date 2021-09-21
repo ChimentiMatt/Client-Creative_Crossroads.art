@@ -9,6 +9,7 @@
   font-family: 'Oranienbaum', serif;
   margin: 0;
   padding: 0;
+
 }
 
 /* Into Page --------------------------------------------------------- */
@@ -53,13 +54,14 @@
 .intro-links{
   text-decoration: none;
   color: black;
+
 }
 
 .intro-links:hover{
   opacity: 1;
    font-weight: 700; 
-   color: #0085b6;
    opacity: 1;
+
 }
 
 .watermark{
@@ -212,8 +214,8 @@
 }
 
 .links{
-  padding-right: 15px;
-  padding-left: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
   justify-content: center;
   text-align: center;
   color: black;
@@ -223,7 +225,6 @@
 }
 
 .links:hover{
-  color: #0085b6;
   /* text-shadow: 1px 1px black; */
   opacity: 1;
   font-weight: 700;
@@ -232,6 +233,7 @@
 .selected{
   font-weight: 700;
   font-size: 26px;
+  border-bottom: 1px solid black;
 }
 
 .form-field{
@@ -529,7 +531,7 @@
 
 .form-btn:hover{
   /* background-color: black; */
-  background-color:#0085b6;
+  opacity: .8;
 }
 
 
